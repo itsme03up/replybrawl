@@ -31,6 +31,15 @@ export function calculateBlockRisk(badword) {
 }
 
 /**
+ * ブロック判定を行う
+ * @param {Object} badword - 悪口オブジェクト
+ * @returns {boolean} ブロックされるかどうか
+ */
+export function isBlocked(badword) {
+  return Math.random() < calculateBlockRisk(badword);
+}
+
+/**
  * ランダムにNPCの反応を選択
  * @param {number} remainingHp - 残りHP
  * @returns {string} NPCの反応テキスト

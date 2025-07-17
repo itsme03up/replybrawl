@@ -6,13 +6,13 @@
   },
   {
     "word": "byk",
-    "damage": 30,
-    "block_risk": 0.30000000000000004
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "chernozhopyi",
-    "damage": 20,
-    "block_risk": 0.2
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "dolboy'eb",
@@ -26,23 +26,23 @@
   },
   {
     "word": "ebalo",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "ebalom sch'elkat",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "gol",
     "damage": 20,
     "block_risk": 0.2
   },
   {
+    "word": "ebalom sch'elkat",
+    "damage": 30,
+    "block_risk": 0.30000000000000004
+  },
+  {
+    "word": "gol",
+    "damage": 30,
+    "block_risk": 0.30000000000000004
+  },
+  {
     "word": "mudack",
-    "damage": 10,
-    "block_risk": 0.1
+    "damage": 20,
+    "block_risk": 0.2
   },
   {
     "word": "opizdenet",
@@ -71,13 +71,13 @@
   },
   {
     "word": "otpizdit",
-    "damage": 30,
-    "block_risk": 0.30000000000000004
+    "damage": 20,
+    "block_risk": 0.2
   },
   {
     "word": "otsosi",
-    "damage": 10,
-    "block_risk": 0.1
+    "damage": 20,
+    "block_risk": 0.2
   },
   {
     "word": "padlo",
@@ -86,18 +86,18 @@
   },
   {
     "word": "pedik",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
-    "word": "perdet",
     "damage": 10,
     "block_risk": 0.1
   },
   {
+    "word": "perdet",
+    "damage": 30,
+    "block_risk": 0.30000000000000004
+  },
+  {
     "word": "petuh",
-    "damage": 20,
-    "block_risk": 0.2
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "pidar gnoinyj",
@@ -106,13 +106,13 @@
   },
   {
     "word": "pizda",
-    "damage": 20,
-    "block_risk": 0.2
+    "damage": 30,
+    "block_risk": 0.30000000000000004
   },
   {
     "word": "pizdato",
-    "damage": 30,
-    "block_risk": 0.30000000000000004
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "pizdatyi",
@@ -126,13 +126,13 @@
   },
   {
     "word": "pizdetc",
-    "damage": 20,
-    "block_risk": 0.2
+    "damage": 30,
+    "block_risk": 0.30000000000000004
   },
   {
     "word": "pizdoi nakryt'sja",
-    "damage": 20,
-    "block_risk": 0.2
+    "damage": 30,
+    "block_risk": 0.30000000000000004
   },
   {
     "word": "pizd'uk",
@@ -146,13 +146,13 @@
   },
   {
     "word": "podi ku'evo",
-    "damage": 20,
-    "block_risk": 0.2
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "poeben",
-    "damage": 30,
-    "block_risk": 0.30000000000000004
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "po'imat' na konchik",
@@ -161,28 +161,28 @@
   },
   {
     "word": "po'iti posrat",
-    "damage": 20,
-    "block_risk": 0.2
+    "damage": 30,
+    "block_risk": 0.30000000000000004
   },
   {
     "word": "po khuy",
-    "damage": 30,
-    "block_risk": 0.30000000000000004
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "poluchit pizdy",
-    "damage": 30,
-    "block_risk": 0.30000000000000004
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "pososi moyu konfetku",
-    "damage": 30,
-    "block_risk": 0.30000000000000004
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "prissat",
-    "damage": 20,
-    "block_risk": 0.2
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "proebat",
@@ -191,18 +191,18 @@
   },
   {
     "word": "promudobl'adsksya pizdopro'ebina",
-    "damage": 10,
-    "block_risk": 0.1
+    "damage": 20,
+    "block_risk": 0.2
   },
   {
     "word": "propezdoloch",
-    "damage": 10,
-    "block_risk": 0.1
+    "damage": 30,
+    "block_risk": 0.30000000000000004
   },
   {
     "word": "prosrat",
-    "damage": 20,
-    "block_risk": 0.2
+    "damage": 30,
+    "block_risk": 0.30000000000000004
   },
   {
     "word": "raspeezdeyi",
@@ -216,23 +216,23 @@
   },
   {
     "word": "raz'yebuy",
-    "damage": 30,
-    "block_risk": 0.30000000000000004
+    "damage": 20,
+    "block_risk": 0.2
   },
   {
     "word": "raz'yoba",
-    "damage": 10,
-    "block_risk": 0.1
+    "damage": 20,
+    "block_risk": 0.2
   },
   {
     "word": "s'ebat'sya",
-    "damage": 30,
-    "block_risk": 0.30000000000000004
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "shalava",
-    "damage": 10,
-    "block_risk": 0.1
+    "damage": 20,
+    "block_risk": 0.2
   },
   {
     "word": "styervo",
@@ -241,8 +241,8 @@
   },
   {
     "word": "sukin syn",
-    "damage": 10,
-    "block_risk": 0.1
+    "damage": 30,
+    "block_risk": 0.30000000000000004
   },
   {
     "word": "svodit posrat",
@@ -256,8 +256,8 @@
   },
   {
     "word": "trakhat'sya",
-    "damage": 20,
-    "block_risk": 0.2
+    "damage": 30,
+    "block_risk": 0.30000000000000004
   },
   {
     "word": "trimandoblydskiy pizdoproyob",
@@ -271,8 +271,8 @@
   },
   {
     "word": "uboy",
-    "damage": 20,
-    "block_risk": 0.2
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "u'ebitsche",
@@ -281,8 +281,8 @@
   },
   {
     "word": "vafl'a",
-    "damage": 20,
-    "block_risk": 0.2
+    "damage": 30,
+    "block_risk": 0.30000000000000004
   },
   {
     "word": "vafli lovit",
@@ -291,13 +291,13 @@
   },
   {
     "word": "v pizdu",
-    "damage": 20,
-    "block_risk": 0.2
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "vyperdysh",
-    "damage": 10,
-    "block_risk": 0.1
+    "damage": 30,
+    "block_risk": 0.30000000000000004
   },
   {
     "word": "vzdrochennyi",
@@ -311,8 +311,8 @@
   },
   {
     "word": "za'ebat",
-    "damage": 10,
-    "block_risk": 0.1
+    "damage": 30,
+    "block_risk": 0.30000000000000004
   },
   {
     "word": "zaebis",
@@ -321,8 +321,8 @@
   },
   {
     "word": "zalupa",
-    "damage": 30,
-    "block_risk": 0.30000000000000004
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "zalupat",
@@ -351,13 +351,13 @@
   },
   {
     "word": "блядки",
-    "damage": 30,
-    "block_risk": 0.30000000000000004
+    "damage": 20,
+    "block_risk": 0.2
   },
   {
     "word": "блядовать",
-    "damage": 10,
-    "block_risk": 0.1
+    "damage": 30,
+    "block_risk": 0.30000000000000004
   },
   {
     "word": "блядство",
@@ -366,23 +366,23 @@
   },
   {
     "word": "блядь",
-    "damage": 20,
-    "block_risk": 0.2
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "бугор",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "во пизду",
     "damage": 30,
     "block_risk": 0.30000000000000004
   },
   {
-    "word": "во пизду",
+    "word": "встать раком",
     "damage": 20,
     "block_risk": 0.2
-  },
-  {
-    "word": "встать раком",
-    "damage": 10,
-    "block_risk": 0.1
   },
   {
     "word": "выёбываться",
@@ -396,13 +396,13 @@
   },
   {
     "word": "говно",
-    "damage": 20,
-    "block_risk": 0.2
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "говнюк",
-    "damage": 20,
-    "block_risk": 0.2
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "голый",
@@ -411,8 +411,8 @@
   },
   {
     "word": "дать пизды",
-    "damage": 10,
-    "block_risk": 0.1
+    "damage": 20,
+    "block_risk": 0.2
   },
   {
     "word": "дерьмо",
@@ -421,23 +421,23 @@
   },
   {
     "word": "дрочить",
-    "damage": 10,
-    "block_risk": 0.1
+    "damage": 20,
+    "block_risk": 0.2
   },
   {
     "word": "другой дразнится",
-    "damage": 10,
-    "block_risk": 0.1
+    "damage": 20,
+    "block_risk": 0.2
   },
   {
     "word": "ёбарь",
-    "damage": 10,
-    "block_risk": 0.1
+    "damage": 30,
+    "block_risk": 0.30000000000000004
   },
   {
     "word": "ебать",
-    "damage": 10,
-    "block_risk": 0.1
+    "damage": 20,
+    "block_risk": 0.2
   },
   {
     "word": "ебать-копать",
@@ -461,8 +461,8 @@
   },
   {
     "word": "жопа",
-    "damage": 20,
-    "block_risk": 0.2
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "жополиз",
@@ -471,8 +471,8 @@
   },
   {
     "word": "играть на кожаной флейте",
-    "damage": 20,
-    "block_risk": 0.2
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "измудохать",
@@ -481,23 +481,23 @@
   },
   {
     "word": "каждый дрочит как он хочет",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "какая разница",
     "damage": 20,
     "block_risk": 0.2
   },
   {
-    "word": "какая разница",
-    "damage": 30,
-    "block_risk": 0.30000000000000004
-  },
-  {
     "word": "как два пальца обоссать",
-    "damage": 10,
-    "block_risk": 0.1
+    "damage": 20,
+    "block_risk": 0.2
   },
   {
     "word": "курите мою трубку",
-    "damage": 10,
-    "block_risk": 0.1
+    "damage": 20,
+    "block_risk": 0.2
   },
   {
     "word": "лысого в кулаке гонять",
@@ -511,13 +511,13 @@
   },
   {
     "word": "манда",
-    "damage": 10,
-    "block_risk": 0.1
+    "damage": 30,
+    "block_risk": 0.30000000000000004
   },
   {
     "word": "мандавошка",
-    "damage": 20,
-    "block_risk": 0.2
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "мент",
@@ -526,8 +526,8 @@
   },
   {
     "word": "муда",
-    "damage": 10,
-    "block_risk": 0.1
+    "damage": 20,
+    "block_risk": 0.2
   },
   {
     "word": "мудило",
@@ -536,33 +536,33 @@
   },
   {
     "word": "мудозвон",
-    "damage": 10,
-    "block_risk": 0.1
+    "damage": 20,
+    "block_risk": 0.2
   },
   {
     "word": "наебать",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
-    "word": "наебениться",
     "damage": 10,
     "block_risk": 0.1
   },
   {
+    "word": "наебениться",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
     "word": "наебнуться",
-    "damage": 30,
-    "block_risk": 0.30000000000000004
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "на фиг",
-    "damage": 20,
-    "block_risk": 0.2
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "на хуй",
-    "damage": 20,
-    "block_risk": 0.2
+    "damage": 30,
+    "block_risk": 0.30000000000000004
   },
   {
     "word": "на хую вертеть",
@@ -571,8 +571,8 @@
   },
   {
     "word": "на хуя",
-    "damage": 20,
-    "block_risk": 0.2
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "нахуячиться",
@@ -581,18 +581,18 @@
   },
   {
     "word": "невебенный",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "не ебет",
     "damage": 20,
     "block_risk": 0.2
   },
   {
-    "word": "не ебет",
-    "damage": 30,
-    "block_risk": 0.30000000000000004
-  },
-  {
     "word": "ни за хуй собачу",
-    "damage": 10,
-    "block_risk": 0.1
+    "damage": 20,
+    "block_risk": 0.2
   },
   {
     "word": "ни хуя",
@@ -601,18 +601,18 @@
   },
   {
     "word": "обнаженный",
-    "damage": 20,
-    "block_risk": 0.2
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "обоссаться можно",
-    "damage": 20,
-    "block_risk": 0.2
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "один ебётся",
-    "damage": 30,
-    "block_risk": 0.30000000000000004
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "опесдол",
@@ -626,8 +626,8 @@
   },
   {
     "word": "охуеть",
-    "damage": 10,
-    "block_risk": 0.1
+    "damage": 20,
+    "block_risk": 0.2
   },
   {
     "word": "охуительно",
@@ -636,8 +636,8 @@
   },
   {
     "word": "половое сношение",
-    "damage": 20,
-    "block_risk": 0.2
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "секс",
@@ -656,13 +656,13 @@
   },
   {
     "word": "срать",
-    "damage": 20,
-    "block_risk": 0.2
+    "damage": 30,
+    "block_risk": 0.30000000000000004
   },
   {
     "word": "ссать",
-    "damage": 30,
-    "block_risk": 0.30000000000000004
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "траxать",
@@ -671,13 +671,13 @@
   },
   {
     "word": "ты мне ваньку не валяй",
-    "damage": 10,
-    "block_risk": 0.1
+    "damage": 30,
+    "block_risk": 0.30000000000000004
   },
   {
     "word": "фига",
-    "damage": 10,
-    "block_risk": 0.1
+    "damage": 20,
+    "block_risk": 0.2
   },
   {
     "word": "хапать",
@@ -691,13 +691,13 @@
   },
   {
     "word": "хер с ним",
-    "damage": 30,
-    "block_risk": 0.30000000000000004
+    "damage": 20,
+    "block_risk": 0.2
   },
   {
     "word": "хохол",
-    "damage": 20,
-    "block_risk": 0.2
+    "damage": 30,
+    "block_risk": 0.30000000000000004
   },
   {
     "word": "хрен",
@@ -711,18 +711,18 @@
   },
   {
     "word": "хуёвый",
-    "damage": 20,
-    "block_risk": 0.2
+    "damage": 30,
+    "block_risk": 0.30000000000000004
   },
   {
     "word": "хуем груши околачивать",
-    "damage": 20,
-    "block_risk": 0.2
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "хуеплет",
-    "damage": 20,
-    "block_risk": 0.2
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "хуило",
@@ -731,18 +731,18 @@
   },
   {
     "word": "хуиней страдать",
-    "damage": 10,
-    "block_risk": 0.1
+    "damage": 20,
+    "block_risk": 0.2
   },
   {
     "word": "хуиня",
-    "damage": 10,
-    "block_risk": 0.1
+    "damage": 20,
+    "block_risk": 0.2
   },
   {
     "word": "хуй",
-    "damage": 10,
-    "block_risk": 0.1
+    "damage": 20,
+    "block_risk": 0.2
   },
   {
     "word": "хуйнуть",
@@ -751,7 +751,7 @@
   },
   {
     "word": "хуй пинать",
-    "damage": 20,
-    "block_risk": 0.2
+    "damage": 10,
+    "block_risk": 0.1
   }
 ]

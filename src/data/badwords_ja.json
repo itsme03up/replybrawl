@@ -1,901 +1,696 @@
 [
   {
-    "word": "3p",
+    "word": "お前のセンスは終わってる",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "そんなんだから友達いないんだよ",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "脳みそ筋肉でできてるの？",
     "damage": 10,
     "block_risk": 0.1
   },
   {
-    "word": "g スポット",
+    "word": "ゆとり世代の典型だな",
     "damage": 10,
     "block_risk": 0.1
   },
   {
-    "word": "s ＆ m",
-    "damage": 20,
-    "block_risk": 0.2
+    "word": "まじで頭悪そう",
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
-    "word": "sm",
-    "damage": 20,
-    "block_risk": 0.2
+    "word": "顔面偏差値低すぎ",
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
-    "word": "sm女王",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
-    "word": "xx",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
-    "word": "アジアのかわいい女の子",
+    "word": "センスが昭和で止まってる",
     "damage": 30,
     "block_risk": 0.30000000000000004
   },
   {
-    "word": "アスホール",
+    "word": "その発言、小学生レベル",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "想像力の欠片もない",
     "damage": 20,
     "block_risk": 0.2
   },
   {
-    "word": "アナリングス",
+    "word": "話がつまらなすぎる",
     "damage": 10,
     "block_risk": 0.1
   },
   {
-    "word": "アナル",
+    "word": "そのネタ、滑ってるよ",
     "damage": 10,
     "block_risk": 0.1
   },
   {
-    "word": "いたずら",
+    "word": "もう少し勉強してから来い",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "君の意見に価値はない",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "センスのかけらもない",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "その服装、ダサすぎない？",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "もう黙ってたほうがいいよ",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "君には無理だと思う",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "レベルが違いすぎる",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "そんなんじゃモテないよ",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "頭の中、空っぽでしょ",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "その趣味、古くない？",
     "damage": 30,
     "block_risk": 0.30000000000000004
   },
   {
-    "word": "イラマチオ",
+    "word": "もう少し空気読もうか",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "君の存在感、薄すぎ",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "そのギャグ、寒いんだけど",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "常識なさすぎでしょ",
     "damage": 30,
     "block_risk": 0.30000000000000004
   },
   {
-    "word": "エクスタシー",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
-    "word": "エスコート",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
-    "word": "エッチ",
+    "word": "もう帰ったら？",
     "damage": 10,
     "block_risk": 0.1
   },
   {
-    "word": "エロティズム",
+    "word": "君には関係ない話だよ",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "その反応、ワンパターン",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "頭固すぎない？",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "もう少し柔軟に考えなよ",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "そんなんだから成長しないんだよ",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "君の価値観、古すぎ",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "その発想、幼稚すぎる",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "もう少し大人になろうか",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "君には理解できないと思う",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "センスが絶望的だね",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "その服、どこで買ったの？",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "顔と性格、どっちもアウト",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "君の話、退屈すぎる",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "そのリアクション、わざとらしい",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "もう少し真面目にやろうよ",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "君の努力、足りなすぎ",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "その程度で満足なの？",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "もう諦めたら？",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "君には向いてないよ",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "そんなんじゃ将来不安だね",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "もう少し頑張ろうか",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "君の実力、その程度？",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "期待してたのに残念",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "そのセンス、どうにかならない？",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "もう少し空気読んでよ",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "君の発言、的外れすぎ",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "その態度、感じ悪いよ",
     "damage": 30,
     "block_risk": 0.30000000000000004
   },
   {
-    "word": "エロティック",
+    "word": "もう少し謙虚になれば？",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "君には無縁の世界だね",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "そんなんじゃ笑われるよ",
     "damage": 10,
     "block_risk": 0.1
   },
   {
-    "word": "オーガズム",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
-    "word": "オカマ",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
-    "word": "おしっこ",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
-    "word": "おしり",
+    "word": "もう帰ったほうがいいんじゃない？",
     "damage": 10,
     "block_risk": 0.1
   },
   {
-    "word": "オシリ",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "おしりのあな",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "おっぱい",
+    "word": "君の存在、空気すぎる",
     "damage": 20,
     "block_risk": 0.2
   },
   {
-    "word": "オッパイ",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
-    "word": "オナニー",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
-    "word": "オマンコ",
+    "word": "そのギャグ、滑りまくり",
     "damage": 10,
     "block_risk": 0.1
   },
   {
-    "word": "おもらし",
+    "word": "頭の回転、遅すぎない？",
     "damage": 10,
     "block_risk": 0.1
   },
   {
-    "word": "お尻",
+    "word": "もう少し勉強が必要だね",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "君の意見、参考にならない",
     "damage": 10,
     "block_risk": 0.1
   },
   {
-    "word": "カーマスートラ",
+    "word": "その反応、予想通り",
     "damage": 20,
     "block_risk": 0.2
   },
   {
-    "word": "カント",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
-    "word": "クリトリス",
+    "word": "もう黙ってろよ",
     "damage": 10,
     "block_risk": 0.1
   },
   {
-    "word": "グループ・セックス",
+    "word": "君には分からないと思う",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "そのセンス、終わってる",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "顔面レベル、低すぎ",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "君の話、オチがない",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "もう少し面白いこと言えば？",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "その発想、貧困すぎる",
     "damage": 20,
     "block_risk": 0.2
   },
   {
-    "word": "グロ",
+    "word": "君には無理だって",
     "damage": 30,
     "block_risk": 0.30000000000000004
   },
   {
-    "word": "クンニリングス",
+    "word": "そんなんだから嫌われるんだよ",
     "damage": 20,
     "block_risk": 0.2
   },
   {
-    "word": "ゲイ・セックス",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
-    "word": "ゲイボーイ",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
-    "word": "ゴールデンシャワー",
+    "word": "もう諦めなよ",
     "damage": 10,
     "block_risk": 0.1
   },
   {
-    "word": "コカイン",
+    "word": "君の実力、たかが知れてる",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "その程度で威張るなよ",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "もう少し自分を見つめ直せば？",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "君の価値、疑問だらけ",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "そのリアクション、つまらない",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "頭の中、からっぽでしょ",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "もう帰れば？",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "君には関係ないから",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "その態度、ムカつく",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "もう少し礼儀を学べば？",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "君の存在、意味ある？",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "そんなんじゃダメでしょ",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "もう少し頑張れよ",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "君の努力、見えないんだけど",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "その程度で満足？",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "もう諦めた方がいいよ",
     "damage": 30,
     "block_risk": 0.30000000000000004
   },
   {
-    "word": "ゴックン",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
-    "word": "サディズム",
+    "word": "君には向いてない",
     "damage": 10,
     "block_risk": 0.1
   },
   {
-    "word": "しばり",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "スウィンガー",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "スカートの中",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "スカトロ",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "ストラップオン",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
-    "word": "ストリップ劇場",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
-    "word": "スラット",
+    "word": "そんなんじゃ笑いものだよ",
     "damage": 30,
     "block_risk": 0.30000000000000004
   },
   {
-    "word": "スリット",
+    "word": "もう黙ってて",
     "damage": 20,
     "block_risk": 0.2
   },
   {
-    "word": "セクシーな",
+    "word": "君の発言、価値ゼロ",
     "damage": 10,
     "block_risk": 0.1
   },
   {
-    "word": "セクシーな 10 代",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
-    "word": "セックス",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "ソドミー",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
-    "word": "ちんこ",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "ディープ・スロート",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "ディック",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "ディルド",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
-    "word": "デートレイプ",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "デブ",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "テレフォンセックス",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
-    "word": "ドッグスタイル",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "トップレス",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "なめ",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "ニガー",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "ヌード",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "ネオ・ナチ",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "ハードコア",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
-    "word": "パイパン",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
-    "word": "バイブレーター",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "バック・スタイル",
+    "word": "その服装、センス疑う",
     "damage": 30,
     "block_risk": 0.30000000000000004
   },
   {
-    "word": "パンティー",
+    "word": "顔と中身、両方残念",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "もう少し勉強してこい",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "君の話、退屈の極み",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "そのギャグ、寒すぎる",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "頭の回転、止まってない？",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "もう帰ったら？",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "君には無理な話",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "そのセンス、救いようがない",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "もう少し空気読もうよ",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "君の存在感、希薄すぎ",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "その反応、ワンパターン",
     "damage": 30,
     "block_risk": 0.30000000000000004
   },
   {
-    "word": "ビッチ",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "ファック",
+    "word": "頭固すぎでしょ",
     "damage": 20,
     "block_risk": 0.2
   },
   {
-    "word": "ファンタジー",
+    "word": "もう少し柔軟性を持てば？",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "君の価値観、時代遅れ",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "そんなんだから成長しない",
     "damage": 20,
     "block_risk": 0.2
   },
   {
-    "word": "フィスト",
+    "word": "もう諦めなさい",
     "damage": 10,
     "block_risk": 0.1
   },
   {
-    "word": "フェティッシュ",
+    "word": "君の実力、お察し",
     "damage": 10,
     "block_risk": 0.1
   },
   {
-    "word": "フェラチオ",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "ふたなり",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
-    "word": "ぶっかけ",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
-    "word": "フック",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "プリンス アルバート ピアス",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
-    "word": "プレイボーイ",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "ベアバック",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
-    "word": "ペニス",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "ペニスバンド",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "ボーイズラブ",
+    "word": "その程度で偉そうに",
     "damage": 30,
     "block_risk": 0.30000000000000004
   },
   {
-    "word": "ボールギャグ",
+    "word": "もう少し謙虚になれ",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "お前の人生、つまらなそう",
     "damage": 10,
     "block_risk": 0.1
   },
   {
-    "word": "ぽっちゃり",
+    "word": "その発言、恥ずかしくない？",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "もう少し現実見ろよ",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "君の将来、心配になる",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "そんなんじゃ相手にされない",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "その考え、浅すぎる",
     "damage": 30,
     "block_risk": 0.30000000000000004
   },
   {
-    "word": "ホモ",
+    "word": "もう黙った方がマシ",
     "damage": 10,
     "block_risk": 0.1
   },
   {
-    "word": "ポルノ",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
-    "word": "ポルノグラフィー",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "ボンテージ",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "マザー・ファッカー",
+    "word": "君の価値、見当たらない",
     "damage": 30,
     "block_risk": 0.30000000000000004
   },
   {
-    "word": "マスターベーション",
+    "word": "そのセンス、壊滅的",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "顔も性格も微妙",
     "damage": 30,
     "block_risk": 0.30000000000000004
   },
   {
-    "word": "まんこ",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "やおい",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "やりまん",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "ラティーナ",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "ラバー",
+    "word": "もう帰っていいよ",
     "damage": 20,
     "block_risk": 0.2
   },
   {
-    "word": "ランジェリー",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
-    "word": "レイプ",
+    "word": "君には理解不能でしょ",
     "damage": 10,
     "block_risk": 0.1
   },
   {
-    "word": "レズビアン",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
-    "word": "ローター",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
-    "word": "ロリータ",
+    "word": "その程度の実力？",
     "damage": 10,
     "block_risk": 0.1
   },
   {
-    "word": "淫乱",
+    "word": "もう諦めが肝心",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "君には無縁だから",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "そんなんじゃ恥ずかしい",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "その発想、貧弱すぎ",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "もう少し努力しなよ",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "君の話、興味ない",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "そのリアクション、予想通り",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "頭の中、お花畑？",
     "damage": 30,
     "block_risk": 0.30000000000000004
   },
   {
-    "word": "陰毛",
+    "word": "もう帰宅時間でしょ",
     "damage": 20,
     "block_risk": 0.2
   },
   {
-    "word": "革抑制",
+    "word": "君には関係ない世界",
     "damage": 20,
     "block_risk": 0.2
   },
   {
-    "word": "騎上位",
+    "word": "その態度、最悪だね",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "もう少し自覚を持てば？",
     "damage": 20,
     "block_risk": 0.2
   },
   {
-    "word": "巨根",
-    "damage": 30,
-    "block_risk": 0.30000000000000004
-  },
-  {
-    "word": "巨乳",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "強姦犯",
-    "damage": 30,
-    "block_risk": 0.30000000000000004
-  },
-  {
-    "word": "玉なめ",
-    "damage": 30,
-    "block_risk": 0.30000000000000004
-  },
-  {
-    "word": "玉舐め",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "緊縛",
-    "damage": 30,
-    "block_risk": 0.30000000000000004
-  },
-  {
-    "word": "近親相姦",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "嫌い",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
-    "word": "後背位",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
-    "word": "合意の性交",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
-    "word": "拷問",
-    "damage": 30,
-    "block_risk": 0.30000000000000004
-  },
-  {
-    "word": "殺し方",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
-    "word": "殺人事件",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
-    "word": "殺人方法",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
-    "word": "支配",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "児童性虐待",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "自己愛性",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "射精",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "手コキ",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "獣姦",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
-    "word": "女の子",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
-    "word": "女王様",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
-    "word": "女子高生",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "女装",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
-    "word": "新しいポルノ",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
-    "word": "人妻",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "人種",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
-    "word": "性交",
-    "damage": 30,
-    "block_risk": 0.30000000000000004
-  },
-  {
-    "word": "正常位",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "生殖器",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
-    "word": "精液",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "挿入",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "足フェチ",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "足を広げる",
-    "damage": 30,
-    "block_risk": 0.30000000000000004
-  },
-  {
-    "word": "大陰唇",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "脱衣",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
-    "word": "茶色のシャワー",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
-    "word": "中出し",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "潮吹き女",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "潮吹き男性",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
-    "word": "直腸",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "剃毛",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "貞操帯",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
-    "word": "奴隷",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "二穴",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "乳首",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
-    "word": "尿道プレイ",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "覗き",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
-    "word": "売春婦",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
-    "word": "縛り",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "噴出",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "糞",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "糞尿愛好症",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "糞便",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
-    "word": "平手打ち",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "変態",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "勃起する",
-    "damage": 30,
-    "block_risk": 0.30000000000000004
-  },
-  {
-    "word": "夢精",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "毛深い",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
-    "word": "誘惑",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
-    "word": "幼児性愛者",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
-    "word": "裸",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "裸の女性",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "乱交",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "両性",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
-    "word": "両性具有",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "両刀",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
-    "word": "輪姦",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
-    "word": "卍",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "宦官",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "肛門",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "膣",
+    "word": "君の存在、邪魔なんだけど",
     "damage": 20,
     "block_risk": 0.2
   }
