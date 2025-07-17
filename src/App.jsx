@@ -13,6 +13,7 @@ function App() {
   const [currentState, setCurrentState] = useState(gameState.getState());
   const [badwordOptions, setBadwordOptions] = useState([]);
   const [message, setMessage] = useState('');
+  const [counterMessage, setCounterMessage] = useState('');
   const [isProcessing, setIsProcessing] = useState(false);
   const [currentLanguage, setCurrentLanguage] = useState('ja');
 
@@ -40,6 +41,7 @@ function App() {
     
     setIsProcessing(true);
     setMessage('');
+    setCounterMessage('');
 
     // 攻撃を処理
     const result = gameState.processPlayerAttack(selectedBadword);
@@ -47,13 +49,21 @@ function App() {
     
     setCurrentState(newState);
     setMessage(result.message);
+    
+    // 反撃メッセージがある場合は遅延表示
+    if (result.counterMessage && !result.gameOver) {
+      setTimeout(() => {
+        setCounterMessage(result.counterMessage);
+      }, 1500);
+    }
 
     // ゲームが終了していない場合、新しい選択肢を生成
     if (!result.gameOver) {
       setTimeout(() => {
         generateNewOptions(currentLanguage);
         setIsProcessing(false);
-      }, 2000);
+        setCounterMessage('');
+      }, 3000);
     } else {
       setIsProcessing(false);
     }
@@ -63,6 +73,7 @@ function App() {
     gameState.reset();
     setCurrentState(gameState.getState());
     setMessage('');
+    setCounterMessage('');
     generateNewOptions(currentLanguage);
     setIsProcessing(false);
   };
@@ -127,7 +138,9 @@ function App() {
             }`}>
               {isVictory 
                 ? getText('🏆 完全勝利！ 🏆', '🏆 Полная победа! 🏆') 
-                : getText('ゲームオーバー', 'Игра окончена')}
+                : currentState.playerHp <= 0
+                  ? getText('メンタル敗北...', 'Ментальное поражение...')
+                  : getText('ゲームオーバー', 'Игра окончена')}
             </h2>
             
             {isVictory && (
@@ -151,7 +164,17 @@ function App() {
                       {i === 0 && <br />}
                     </span>
                   ))
-                : getText('ブロックされてしまいました...', 'Вас заблокировали...')}
+                : currentState.playerHp <= 0
+                  ? getText(
+                      'あなたのメンタルが完全に破綻...\n相手の反撃に耐えられませんでした。',
+                      'Ваша психика полностью сломлена...\nНе смогли выдержать контратаки соперника.'
+                    ).split('\n').map((line, i) => (
+                      <span key={i}>
+                        {line}
+                        {i === 0 && <br />}
+                      </span>
+                    ))
+                  : getText('ブロックされてしまいました...', 'Вас заблокировали...')}
             </p>
             
             {isVictory && (
@@ -267,6 +290,16 @@ function App() {
           </div>
         )}
 
+        {/* 反撃メッセージエリア */}
+        {counterMessage && (
+          <div className="bg-red-900 border border-red-700 rounded-lg p-4 mb-4 text-center animate-pulse">
+            <p className="text-red-200 font-medium">
+              <span className="text-red-300 font-bold">⚡ {getText('反撃', 'Контратака')}！ </span>
+              {counterMessage}
+            </p>
+          </div>
+        )}
+
         {/* 返信オプション */}
         <div className="bg-gray-900 rounded-lg p-6">
           <h3 className="text-xl font-bold mb-4 text-center">
@@ -295,15 +328,19 @@ function App() {
               {currentLanguage === 'ja' ? (
                 <>
                   <li>• 相手のメンタルHPを0にすれば勝利！</li>
+                  <li>• <span className="text-red-400 font-bold">⚡ NEW!</span> 相手も反撃してくる！あなたのHPも減る</li>
                   <li>• 強い悪口ほどダメージが大きいが、ブロック率も上がる</li>
                   <li>• ブロックされたら即ゲームオーバー</li>
+                  <li>• あなたのHPが0になっても敗北！</li>
                   <li>• バランスを考えて攻撃しよう！</li>
                 </>
               ) : (
                 <>
                   <li>• Нанесите сопернику урон до 0 ментального HP, чтобы выиграть!</li>
+                  <li>• <span className="text-red-400 font-bold">⚡ NEW!</span> Соперник тоже атакует в ответ! Ваш HP тоже уменьшается</li>
                   <li>• Чем сильнее оскорбление, тем больше урон, но и риск блокировки выше</li>
                   <li>• Если вас заблокировали, игра окончена</li>
+                  <li>• Если ваш HP упал до 0, вы проиграли!</li>
                   <li>• Атакуйте, учитывая баланс!</li>
                 </>
               )}

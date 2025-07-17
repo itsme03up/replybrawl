@@ -1,7 +1,7 @@
 // gameLogic.js
 // メンタルHPとブロック確率の管理ロジック。悪口選択に応じて数値を更新。
 
-import { calculateDamage, calculateBlockRisk, getNpcReaction } from './wordUtils.js';
+import { calculateDamage, calculateBlockRisk, getNpcReaction, calculateNpcCounterDamage, getNpcCounterAttack } from './wordUtils.js';
 
 /**
  * ゲーム状態を管理するクラス
@@ -61,8 +61,10 @@ export class GameState {
       };
       return {
         damage: 0,
+        counterDamage: 0,
         blocked: true,
         message: messages[this.language] || messages.ja,
+        counterMessage: '',
         gameOver: true
       };
     }
@@ -77,6 +79,30 @@ export class GameState {
       text: selectedBadword.word,
       damage: damage
     });
+
+    // NPCの反撃処理（NPCがまだ生きている場合）
+    let counterDamage = 0;
+    let counterMessage = '';
+    let npcCounterText = '';
+    
+    if (this.npcHp > 0) {
+      counterDamage = calculateNpcCounterDamage(this.npcHp, damage);
+      this.playerHp = Math.max(0, this.playerHp - counterDamage);
+      npcCounterText = getNpcCounterAttack(this.npcHp, counterDamage, this.language);
+      
+      const counterMessages = {
+        ja: `NPCの反撃！ ${counterDamage}ダメージを受けた！`,
+        ru: `Контратака NPC! Получено ${counterDamage} урона!`
+      };
+      counterMessage = counterMessages[this.language] || counterMessages.ja;
+      
+      // 履歴にNPCの反撃を追加
+      this.history.push({
+        type: 'npc',
+        text: npcCounterText,
+        damage: counterDamage
+      });
+    }
 
     // 勝利判定
     if (this.npcHp <= 0) {
@@ -93,26 +119,53 @@ export class GameState {
       this.npcReaction = victoryMessages[this.language] || victoryMessages.ja;
       return {
         damage,
+        counterDamage,
         blocked: false,
         message: gameMessages[this.language] || gameMessages.ja,
+        counterMessage: '',
         gameOver: true
       };
     }
 
-    // NPCの反応を更新
-    this.npcReaction = getNpcReaction(this.npcHp, this.language);
-    
-    // 履歴にNPCの反応を追加
-    this.history.push({
-      type: 'npc',
-      text: this.npcReaction,
-      damage: 0
-    });
+    // プレイヤーの敗北判定
+    if (this.playerHp <= 0) {
+      this.gameOver = true;
+      this.winner = 'npc';
+      const defeatMessages = {
+        ja: "あなたのメンタルが完全に破綻しました...😵",
+        ru: "Ваша психика полностью сломлена... 😵"
+      };
+      this.npcReaction = npcCounterText || getNpcReaction(this.npcHp, this.language);
+      return {
+        damage,
+        counterDamage,
+        blocked: false,
+        message: defeatMessages[this.language] || defeatMessages.ja,
+        counterMessage,
+        gameOver: true
+      };
+    }
+
+    // NPCの反応を更新（反撃がない場合）
+    if (!npcCounterText) {
+      this.npcReaction = getNpcReaction(this.npcHp, this.language);
+      
+      // 履歴にNPCの反応を追加
+      this.history.push({
+        type: 'npc',
+        text: this.npcReaction,
+        damage: 0
+      });
+    } else {
+      this.npcReaction = npcCounterText;
+    }
 
     return {
       damage,
+      counterDamage,
       blocked: false,
       message: `${damage}${this.language === 'ru' ? ' урона!' : 'ダメージ！'}`,
+      counterMessage,
       gameOver: false
     };
   }
