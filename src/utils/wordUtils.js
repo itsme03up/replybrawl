@@ -2,14 +2,37 @@
 // 悪口リストからランダムな選択肢を返すユーティリティ。強さに応じてダメージ倍率も返す。
 
 import badwordsJa from '../data/badwords_ja.json';
+import badwordsRu from '../data/badwords_ru.json';
+
+// 利用可能な言語とデータ
+const languages = {
+  ja: { data: badwordsJa, name: '日本語', flag: '🇯🇵' },
+  ru: { data: badwordsRu, name: 'Русский', flag: '🇷🇺' }
+};
 
 /**
- * ランダムに3つの悪口を選択して返す
+ * 指定された言語でランダムに3つの悪口を選択して返す
+ * @param {string} language - 言語コード (ja, ru)
  * @returns {Array} 3つの悪口オブジェクトの配列
  */
-export function getRandomBadwords() {
-  const shuffled = [...badwordsJa].sort(() => 0.5 - Math.random());
+export function getRandomBadwords(language = 'ja') {
+  const languageData = languages[language];
+  if (!languageData) {
+    console.warn(`Unsupported language: ${language}, falling back to Japanese`);
+    language = 'ja';
+  }
+  
+  const data = languages[language].data;
+  const shuffled = [...data].sort(() => 0.5 - Math.random());
   return shuffled.slice(0, 3);
+}
+
+/**
+ * 利用可能な言語一覧を取得
+ * @returns {Object} 言語情報のオブジェクト
+ */
+export function getAvailableLanguages() {
+  return languages;
 }
 
 /**

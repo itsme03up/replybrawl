@@ -7,14 +7,37 @@ import { calculateDamage, calculateBlockRisk, getNpcReaction } from './wordUtils
  * ゲーム状態を管理するクラス
  */
 export class GameState {
-  constructor() {
+  constructor(language = 'ja') {
+    this.language = language;
     this.playerHp = 100;
     this.npcHp = 100;
     this.blockRisk = 0;
     this.gameOver = false;
     this.winner = null;
-    this.npcReaction = "よろしく、始めようか😎";
+    this.npcReaction = this.getInitialMessage();
     this.history = [];
+  }
+
+  /**
+   * 初期メッセージを言語に応じて取得
+   */
+  getInitialMessage() {
+    const messages = {
+      ja: "よろしく、始めようか😎",
+      ru: "Начнём, что ли? 😎"
+    };
+    return messages[this.language] || messages.ja;
+  }
+
+  /**
+   * 言語を変更
+   * @param {string} newLanguage - 新しい言語コード
+   */
+  setLanguage(newLanguage) {
+    this.language = newLanguage;
+    if (!this.gameOver) {
+      this.npcReaction = this.getInitialMessage();
+    }
   }
 
   /**
@@ -32,10 +55,14 @@ export class GameState {
     if (isBlocked) {
       this.gameOver = true;
       this.winner = 'npc';
+      const messages = {
+        ja: "ブロックされました！相手の勝利です😵",
+        ru: "Заблокировали! Победа противника 😵"
+      };
       return {
         damage: 0,
         blocked: true,
-        message: "ブロックされました！相手の勝利です😵",
+        message: messages[this.language] || messages.ja,
         gameOver: true
       };
     }
@@ -55,17 +82,25 @@ export class GameState {
     if (this.npcHp <= 0) {
       this.gameOver = true;
       this.winner = 'player';
-      this.npcReaction = "参った...お前の勝ちだ😵";
+      const victoryMessages = {
+        ja: "参った...お前の勝ちだ😵",
+        ru: "Сдаюсь... ты победил 😵"
+      };
+      const gameMessages = {
+        ja: "勝利！相手のメンタルを完全に破壊しました🎉",
+        ru: "Победа! Полностью сломил противника 🎉"
+      };
+      this.npcReaction = victoryMessages[this.language] || victoryMessages.ja;
       return {
         damage,
         blocked: false,
-        message: "勝利！相手のメンタルを完全に破壊しました🎉",
+        message: gameMessages[this.language] || gameMessages.ja,
         gameOver: true
       };
     }
 
     // NPCの反応を更新
-    this.npcReaction = getNpcReaction(this.npcHp);
+    this.npcReaction = getNpcReaction(this.npcHp, this.language);
     
     // 履歴にNPCの反応を追加
     this.history.push({
@@ -77,7 +112,7 @@ export class GameState {
     return {
       damage,
       blocked: false,
-      message: `${damage}ダメージ！`,
+      message: `${damage}${this.language === 'ru' ? ' урона!' : 'ダメージ！'}`,
       gameOver: false
     };
   }
@@ -91,7 +126,7 @@ export class GameState {
     this.blockRisk = 0;
     this.gameOver = false;
     this.winner = null;
-    this.npcReaction = "よろしく、始めようか😎";
+    this.npcReaction = this.getInitialMessage();
     this.history = [];
   }
 

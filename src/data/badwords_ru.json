@@ -1,757 +1,572 @@
 [
   {
-    "word": "bychara",
+    "word": "Твой вкус безнадёжен",
     "damage": 10,
     "block_risk": 0.1
   },
   {
-    "word": "byk",
+    "word": "У тебя совсем нет друзей",
     "damage": 10,
     "block_risk": 0.1
   },
   {
-    "word": "chernozhopyi",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "dolboy'eb",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "ebalnik",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "ebalo",
+    "word": "Мозги из ваты что ли?",
     "damage": 20,
     "block_risk": 0.2
   },
   {
-    "word": "ebalom sch'elkat",
+    "word": "Типичный представитель поколения",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "Выглядишь не очень умно",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "Внешность подкачала",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "Вкус застрял в прошлом веке",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "Говоришь как школьник",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "Никакой фантазии",
     "damage": 30,
     "block_risk": 0.30000000000000004
   },
   {
-    "word": "gol",
+    "word": "Скучно до невозможности",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "Шутка не зашла",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "Сначала учиться надо",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "Твоё мнение никому не нужно",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "Стиля ноль",
     "damage": 30,
     "block_risk": 0.30000000000000004
   },
   {
-    "word": "mudack",
+    "word": "Одежда ужасная",
     "damage": 20,
     "block_risk": 0.2
   },
   {
-    "word": "opizdenet",
+    "word": "Лучше молчи",
     "damage": 20,
     "block_risk": 0.2
   },
   {
-    "word": "osto'eblo",
+    "word": "Тебе это не по силам",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "Уровень не тот",
     "damage": 10,
     "block_risk": 0.1
   },
   {
-    "word": "ostokhuitel'no",
+    "word": "Так не понравишься никому",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "Голова пустая",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "Увлечения устарели",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "Читать настроение не умеешь",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "Незаметный какой-то",
     "damage": 30,
     "block_risk": 0.30000000000000004
   },
   {
-    "word": "ot'ebis",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
-    "word": "otmudohat",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
-    "word": "otpizdit",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
-    "word": "otsosi",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
-    "word": "padlo",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
-    "word": "pedik",
+    "word": "Юмор не твоё",
     "damage": 10,
     "block_risk": 0.1
   },
   {
-    "word": "perdet",
+    "word": "Воспитания не хватает",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "Иди домой",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "Не твоя тема",
     "damage": 30,
     "block_risk": 0.30000000000000004
   },
   {
-    "word": "petuh",
+    "word": "Реакция предсказуемая",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "Слишком консервативный",
     "damage": 10,
     "block_risk": 0.1
   },
   {
-    "word": "pidar gnoinyj",
+    "word": "Гибкости ноль",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "Поэтому и не растёшь",
     "damage": 10,
     "block_risk": 0.1
   },
   {
-    "word": "pizda",
+    "word": "Взгляды устарели",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "Мышление детское",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "Взрослеть пора бы",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "Не поймёшь всё равно",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "Безнадёжно",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "Где такое купил?",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "И лицо и характер провал",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "Говоришь скучно",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "Наигранно как-то",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "Серьёзнее надо",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "Стараешься мало",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "Доволен малым?",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "Сдавайся уже",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "Не подходит тебе",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "Будущее туманное",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "Постарайся хоть",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "Способности такие?",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "Разочаровал",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "Стиль исправить можно?",
     "damage": 30,
     "block_risk": 0.30000000000000004
   },
   {
-    "word": "pizdato",
+    "word": "Обстановку не чувствуешь",
     "damage": 10,
     "block_risk": 0.1
   },
   {
-    "word": "pizdatyi",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "piz'det",
+    "word": "Мимо цели",
     "damage": 20,
     "block_risk": 0.2
   },
   {
-    "word": "pizdetc",
+    "word": "Неприятный тип",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "Скромнее надо",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "Далёкий мир для тебя",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "Будут смеяться",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "Домой пора",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "Воздух какой-то",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "Шутки не идут",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "Тормозишь сильно",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "Учиться ещё и учиться",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "Мнение бесполезное",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "Как и ожидалось",
     "damage": 30,
     "block_risk": 0.30000000000000004
   },
   {
-    "word": "pizdoi nakryt'sja",
+    "word": "Молчи лучше",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "Не дойдёт до тебя",
     "damage": 30,
     "block_risk": 0.30000000000000004
   },
   {
-    "word": "pizd'uk",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "piz`dyulina",
+    "word": "Стиль кончился",
     "damage": 20,
     "block_risk": 0.2
   },
   {
-    "word": "podi ku'evo",
+    "word": "Внешность провальная",
     "damage": 10,
     "block_risk": 0.1
   },
   {
-    "word": "poeben",
+    "word": "Говоришь без смысла",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "Поинтереснее можно?",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "Мысли бедные",
     "damage": 10,
     "block_risk": 0.1
   },
   {
-    "word": "po'imat' na konchik",
+    "word": "Не твоя лига",
     "damage": 10,
     "block_risk": 0.1
   },
   {
-    "word": "po'iti posrat",
+    "word": "Ненавидят за такое",
     "damage": 30,
     "block_risk": 0.30000000000000004
   },
   {
-    "word": "po khuy",
+    "word": "Брось это дело",
     "damage": 10,
     "block_risk": 0.1
   },
   {
-    "word": "poluchit pizdy",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "pososi moyu konfetku",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "prissat",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "proebat",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "promudobl'adsksya pizdopro'ebina",
+    "word": "Уровень низкий",
     "damage": 20,
     "block_risk": 0.2
   },
   {
-    "word": "propezdoloch",
+    "word": "Не зазнавайся",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "Посмотри на себя",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "Ценность сомнительная",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "Реакция скучная",
     "damage": 30,
     "block_risk": 0.30000000000000004
   },
   {
-    "word": "prosrat",
+    "word": "Пустота в голове",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "Домой марш",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "Не касается тебя",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "Поведение отвратительное",
     "damage": 30,
     "block_risk": 0.30000000000000004
   },
   {
-    "word": "raspeezdeyi",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
-    "word": "raspizdatyi",
+    "word": "Манерам учись",
     "damage": 10,
     "block_risk": 0.1
   },
   {
-    "word": "raz'yebuy",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
-    "word": "raz'yoba",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
-    "word": "s'ebat'sya",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "shalava",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
-    "word": "styervo",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "sukin syn",
+    "word": "Смысл в тебе есть?",
     "damage": 30,
     "block_risk": 0.30000000000000004
   },
   {
-    "word": "svodit posrat",
+    "word": "Плохо же",
     "damage": 10,
     "block_risk": 0.1
   },
   {
-    "word": "svoloch",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "trakhat'sya",
+    "word": "Попробуй лучше",
     "damage": 30,
     "block_risk": 0.30000000000000004
   },
   {
-    "word": "trimandoblydskiy pizdoproyob",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
-    "word": "ubl'yudok",
+    "word": "Усилий не видно",
     "damage": 10,
     "block_risk": 0.1
   },
   {
-    "word": "uboy",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "u'ebitsche",
+    "word": "Довольно этого?",
     "damage": 20,
     "block_risk": 0.2
   },
   {
-    "word": "vafl'a",
+    "word": "Оставь попытки",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "Не для тебя",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "Позорище будет",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "Заткнись уже",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "Слова пустые",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "Стиль ужасный",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "Внутри и снаружи плохо",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "Поучись сначала",
     "damage": 30,
     "block_risk": 0.30000000000000004
   },
   {
-    "word": "vafli lovit",
+    "word": "Говоришь нудно",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "Юмор холодный",
     "damage": 10,
     "block_risk": 0.1
   },
   {
-    "word": "v pizdu",
+    "word": "Соображаешь медленно",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "Домой иди",
     "damage": 10,
     "block_risk": 0.1
   },
   {
-    "word": "vyperdysh",
+    "word": "Сложная тема",
     "damage": 30,
     "block_risk": 0.30000000000000004
   },
   {
-    "word": "vzdrochennyi",
+    "word": "Стиль умер",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "Больше воздуха",
     "damage": 10,
     "block_risk": 0.1
   },
   {
-    "word": "yeb vas",
+    "word": "Незаметность максимальная",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "Реакция шаблонная",
     "damage": 10,
     "block_risk": 0.1
   },
   {
-    "word": "za'ebat",
+    "word": "Мозги задубели",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "Гибкости прибавь",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "Мировоззрение древнее",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "Развитие стоит",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "Сдавайся",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "Возможности ограничены",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "Высокомерничаешь",
     "damage": 30,
     "block_risk": 0.30000000000000004
   },
   {
-    "word": "zaebis",
-    "damage": 10,
-    "block_risk": 0.1
+    "word": "Критически посмотри",
+    "damage": 20,
+    "block_risk": 0.2
   },
   {
-    "word": "zalupa",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "zalupat",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "zasranetc",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "zassat",
+    "word": "Значимость под вопросом",
     "damage": 30,
     "block_risk": 0.30000000000000004
-  },
-  {
-    "word": "zlo'ebuchy",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
-    "word": "бздёнок",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "блядки",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
-    "word": "блядовать",
-    "damage": 30,
-    "block_risk": 0.30000000000000004
-  },
-  {
-    "word": "блядство",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "блядь",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "бугор",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "во пизду",
-    "damage": 30,
-    "block_risk": 0.30000000000000004
-  },
-  {
-    "word": "встать раком",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
-    "word": "выёбываться",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "гандон",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "говно",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "говнюк",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "голый",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "дать пизды",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
-    "word": "дерьмо",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "дрочить",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
-    "word": "другой дразнится",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
-    "word": "ёбарь",
-    "damage": 30,
-    "block_risk": 0.30000000000000004
-  },
-  {
-    "word": "ебать",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
-    "word": "ебать-копать",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "ебло",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "ебнуть",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
-    "word": "ёб твою мать",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
-    "word": "жопа",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "жополиз",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "играть на кожаной флейте",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "измудохать",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "каждый дрочит как он хочет",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "какая разница",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
-    "word": "как два пальца обоссать",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
-    "word": "курите мою трубку",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
-    "word": "лысого в кулаке гонять",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "малофья",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
-    "word": "манда",
-    "damage": 30,
-    "block_risk": 0.30000000000000004
-  },
-  {
-    "word": "мандавошка",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "мент",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "муда",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
-    "word": "мудило",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "мудозвон",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
-    "word": "наебать",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "наебениться",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
-    "word": "наебнуться",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "на фиг",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "на хуй",
-    "damage": 30,
-    "block_risk": 0.30000000000000004
-  },
-  {
-    "word": "на хую вертеть",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "на хуя",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "нахуячиться",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "невебенный",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "не ебет",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
-    "word": "ни за хуй собачу",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
-    "word": "ни хуя",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "обнаженный",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "обоссаться можно",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "один ебётся",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "опесдол",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "офигеть",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "охуеть",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
-    "word": "охуительно",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "половое сношение",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "секс",
-    "damage": 30,
-    "block_risk": 0.30000000000000004
-  },
-  {
-    "word": "сиськи",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
-    "word": "спиздить",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "срать",
-    "damage": 30,
-    "block_risk": 0.30000000000000004
-  },
-  {
-    "word": "ссать",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "траxать",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
-    "word": "ты мне ваньку не валяй",
-    "damage": 30,
-    "block_risk": 0.30000000000000004
-  },
-  {
-    "word": "фига",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
-    "word": "хапать",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "хер с ней",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "хер с ним",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
-    "word": "хохол",
-    "damage": 30,
-    "block_risk": 0.30000000000000004
-  },
-  {
-    "word": "хрен",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "хуёво",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "хуёвый",
-    "damage": 30,
-    "block_risk": 0.30000000000000004
-  },
-  {
-    "word": "хуем груши околачивать",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "хуеплет",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "хуило",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
-    "word": "хуиней страдать",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
-    "word": "хуиня",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
-    "word": "хуй",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
-    "word": "хуйнуть",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "хуй пинать",
-    "damage": 10,
-    "block_risk": 0.1
   }
 ]
