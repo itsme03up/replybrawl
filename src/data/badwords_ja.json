@@ -6,8 +6,8 @@
   },
   {
     "word": "そんなんだから友達いないんだよ",
-    "damage": 20,
-    "block_risk": 0.2
+    "damage": 30,
+    "block_risk": 0.30000000000000004
   },
   {
     "word": "脳みそ筋肉でできてるの？",
@@ -26,8 +26,8 @@
   },
   {
     "word": "顔面偏差値低すぎ",
-    "damage": 30,
-    "block_risk": 0.30000000000000004
+    "damage": 20,
+    "block_risk": 0.2
   },
   {
     "word": "センスが昭和で止まってる",
@@ -36,8 +36,8 @@
   },
   {
     "word": "その発言、小学生レベル",
-    "damage": 10,
-    "block_risk": 0.1
+    "damage": 30,
+    "block_risk": 0.30000000000000004
   },
   {
     "word": "想像力の欠片もない",
@@ -56,53 +56,53 @@
   },
   {
     "word": "もう少し勉強してから来い",
-    "damage": 20,
-    "block_risk": 0.2
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "君の意見に価値はない",
-    "damage": 10,
-    "block_risk": 0.1
+    "damage": 20,
+    "block_risk": 0.2
   },
   {
     "word": "センスのかけらもない",
-    "damage": 30,
-    "block_risk": 0.30000000000000004
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "その服装、ダサすぎない？",
-    "damage": 30,
-    "block_risk": 0.30000000000000004
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "もう黙ってたほうがいいよ",
-    "damage": 10,
-    "block_risk": 0.1
+    "damage": 20,
+    "block_risk": 0.2
   },
   {
     "word": "君には無理だと思う",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "レベルが違いすぎる",
     "damage": 30,
     "block_risk": 0.30000000000000004
   },
   {
-    "word": "レベルが違いすぎる",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
     "word": "そんなんじゃモテないよ",
-    "damage": 10,
-    "block_risk": 0.1
+    "damage": 30,
+    "block_risk": 0.30000000000000004
   },
   {
     "word": "頭の中、空っぽでしょ",
-    "damage": 10,
-    "block_risk": 0.1
+    "damage": 20,
+    "block_risk": 0.2
   },
   {
     "word": "その趣味、古くない？",
-    "damage": 20,
-    "block_risk": 0.2
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "もう少し空気読もうか",
@@ -111,23 +111,23 @@
   },
   {
     "word": "君の存在感、薄すぎ",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
-    "word": "そのギャグ、寒いんだけど",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
-    "word": "常識なさすぎでしょ",
     "damage": 10,
     "block_risk": 0.1
   },
   {
-    "word": "もう帰ったら？",
+    "word": "そのギャグ、寒いんだけど",
     "damage": 30,
     "block_risk": 0.30000000000000004
+  },
+  {
+    "word": "常識なさすぎでしょ",
+    "damage": 30,
+    "block_risk": 0.30000000000000004
+  },
+  {
+    "word": "もう帰ったら？",
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "君には関係ない話だよ",
@@ -136,8 +136,8 @@
   },
   {
     "word": "その反応、ワンパターン",
-    "damage": 10,
-    "block_risk": 0.1
+    "damage": 20,
+    "block_risk": 0.2
   },
   {
     "word": "頭固すぎない？",
@@ -171,23 +171,23 @@
   },
   {
     "word": "君には理解できないと思う",
+    "damage": 30,
+    "block_risk": 0.30000000000000004
+  },
+  {
+    "word": "センスが絶望的だね",
     "damage": 10,
     "block_risk": 0.1
   },
   {
-    "word": "センスが絶望的だね",
+    "word": "その服、どこで買ったの？",
     "damage": 30,
     "block_risk": 0.30000000000000004
-  },
-  {
-    "word": "その服、どこで買ったの？",
-    "damage": 20,
-    "block_risk": 0.2
   },
   {
     "word": "顔と性格、どっちもアウト",
-    "damage": 30,
-    "block_risk": 0.30000000000000004
+    "damage": 20,
+    "block_risk": 0.2
   },
   {
     "word": "君の話、退屈すぎる",
@@ -196,33 +196,33 @@
   },
   {
     "word": "そのリアクション、わざとらしい",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "もう少し真面目にやろうよ",
     "damage": 10,
     "block_risk": 0.1
   },
   {
-    "word": "もう少し真面目にやろうよ",
+    "word": "君の努力、足りなすぎ",
     "damage": 30,
     "block_risk": 0.30000000000000004
   },
   {
-    "word": "君の努力、足りなすぎ",
-    "damage": 20,
-    "block_risk": 0.2
-  },
-  {
     "word": "その程度で満足なの？",
-    "damage": 20,
-    "block_risk": 0.2
+    "damage": 30,
+    "block_risk": 0.30000000000000004
   },
   {
     "word": "もう諦めたら？",
-    "damage": 10,
-    "block_risk": 0.1
+    "damage": 20,
+    "block_risk": 0.2
   },
   {
     "word": "君には向いてないよ",
-    "damage": 20,
-    "block_risk": 0.2
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "そんなんじゃ将来不安だね",
@@ -231,53 +231,53 @@
   },
   {
     "word": "もう少し頑張ろうか",
-    "damage": 10,
-    "block_risk": 0.1
+    "damage": 30,
+    "block_risk": 0.30000000000000004
   },
   {
     "word": "君の実力、その程度？",
-    "damage": 10,
-    "block_risk": 0.1
+    "damage": 20,
+    "block_risk": 0.2
   },
   {
     "word": "期待してたのに残念",
-    "damage": 20,
-    "block_risk": 0.2
+    "damage": 30,
+    "block_risk": 0.30000000000000004
   },
   {
     "word": "そのセンス、どうにかならない？",
+    "damage": 30,
+    "block_risk": 0.30000000000000004
+  },
+  {
+    "word": "もう少し空気読んでよ",
     "damage": 20,
     "block_risk": 0.2
   },
   {
-    "word": "もう少し空気読んでよ",
+    "word": "君の発言、的外れすぎ",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "その態度、感じ悪いよ",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "もう少し謙虚になれば？",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "君には無縁の世界だね",
     "damage": 10,
     "block_risk": 0.1
   },
   {
-    "word": "君の発言、的外れすぎ",
-    "damage": 30,
-    "block_risk": 0.30000000000000004
-  },
-  {
-    "word": "その態度、感じ悪いよ",
-    "damage": 30,
-    "block_risk": 0.30000000000000004
-  },
-  {
-    "word": "もう少し謙虚になれば？",
-    "damage": 30,
-    "block_risk": 0.30000000000000004
-  },
-  {
-    "word": "君には無縁の世界だね",
-    "damage": 30,
-    "block_risk": 0.30000000000000004
-  },
-  {
     "word": "そんなんじゃ笑われるよ",
-    "damage": 20,
-    "block_risk": 0.2
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "もう帰ったほうがいいんじゃない？",
@@ -296,38 +296,38 @@
   },
   {
     "word": "頭の回転、遅すぎない？",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "もう少し勉強が必要だね",
     "damage": 20,
     "block_risk": 0.2
   },
   {
-    "word": "君の意見、参考にならない",
+    "word": "もう少し勉強が必要だね",
     "damage": 30,
     "block_risk": 0.30000000000000004
+  },
+  {
+    "word": "君の意見、参考にならない",
+    "damage": 20,
+    "block_risk": 0.2
   },
   {
     "word": "その反応、予想通り",
-    "damage": 10,
-    "block_risk": 0.1
+    "damage": 20,
+    "block_risk": 0.2
   },
   {
     "word": "もう黙ってろよ",
-    "damage": 10,
-    "block_risk": 0.1
+    "damage": 20,
+    "block_risk": 0.2
   },
   {
     "word": "君には分からないと思う",
-    "damage": 30,
-    "block_risk": 0.30000000000000004
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "そのセンス、終わってる",
-    "damage": 10,
-    "block_risk": 0.1
+    "damage": 20,
+    "block_risk": 0.2
   },
   {
     "word": "顔面レベル、低すぎ",
@@ -336,18 +336,18 @@
   },
   {
     "word": "君の話、オチがない",
-    "damage": 30,
-    "block_risk": 0.30000000000000004
-  },
-  {
-    "word": "もう少し面白いこと言えば？",
     "damage": 20,
     "block_risk": 0.2
   },
   {
-    "word": "その発想、貧困すぎる",
+    "word": "もう少し面白いこと言えば？",
     "damage": 10,
     "block_risk": 0.1
+  },
+  {
+    "word": "その発想、貧困すぎる",
+    "damage": 30,
+    "block_risk": 0.30000000000000004
   },
   {
     "word": "君には無理だって",
@@ -356,23 +356,23 @@
   },
   {
     "word": "そんなんだから嫌われるんだよ",
-    "damage": 10,
-    "block_risk": 0.1
+    "damage": 20,
+    "block_risk": 0.2
   },
   {
     "word": "もう諦めなよ",
-    "damage": 10,
-    "block_risk": 0.1
+    "damage": 20,
+    "block_risk": 0.2
   },
   {
     "word": "君の実力、たかが知れてる",
-    "damage": 10,
-    "block_risk": 0.1
+    "damage": 20,
+    "block_risk": 0.2
   },
   {
     "word": "その程度で威張るなよ",
-    "damage": 10,
-    "block_risk": 0.1
+    "damage": 20,
+    "block_risk": 0.2
   },
   {
     "word": "もう少し自分を見つめ直せば？",
@@ -381,13 +381,13 @@
   },
   {
     "word": "君の価値、疑問だらけ",
-    "damage": 20,
-    "block_risk": 0.2
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "そのリアクション、つまらない",
-    "damage": 30,
-    "block_risk": 0.30000000000000004
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "頭の中、からっぽでしょ",
@@ -396,8 +396,8 @@
   },
   {
     "word": "もう帰れば？",
-    "damage": 20,
-    "block_risk": 0.2
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "君には関係ないから",
@@ -406,43 +406,43 @@
   },
   {
     "word": "その態度、ムカつく",
-    "damage": 10,
-    "block_risk": 0.1
+    "damage": 20,
+    "block_risk": 0.2
   },
   {
     "word": "もう少し礼儀を学べば？",
-    "damage": 20,
-    "block_risk": 0.2
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "君の存在、意味ある？",
-    "damage": 20,
-    "block_risk": 0.2
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "そんなんじゃダメでしょ",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "もう少し頑張れよ",
     "damage": 20,
     "block_risk": 0.2
   },
   {
-    "word": "君の努力、見えないんだけど",
+    "word": "もう少し頑張れよ",
     "damage": 10,
     "block_risk": 0.1
+  },
+  {
+    "word": "君の努力、見えないんだけど",
+    "damage": 20,
+    "block_risk": 0.2
   },
   {
     "word": "その程度で満足？",
-    "damage": 30,
-    "block_risk": 0.30000000000000004
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "もう諦めた方がいいよ",
-    "damage": 10,
-    "block_risk": 0.1
+    "damage": 30,
+    "block_risk": 0.30000000000000004
   },
   {
     "word": "君には向いてない",
@@ -456,8 +456,8 @@
   },
   {
     "word": "もう黙ってて",
-    "damage": 10,
-    "block_risk": 0.1
+    "damage": 20,
+    "block_risk": 0.2
   },
   {
     "word": "君の発言、価値ゼロ",
@@ -466,13 +466,13 @@
   },
   {
     "word": "その服装、センス疑う",
-    "damage": 10,
-    "block_risk": 0.1
+    "damage": 20,
+    "block_risk": 0.2
   },
   {
     "word": "顔と中身、両方残念",
-    "damage": 30,
-    "block_risk": 0.30000000000000004
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "もう少し勉強してこい",
@@ -501,18 +501,18 @@
   },
   {
     "word": "君には無理な話",
-    "damage": 20,
-    "block_risk": 0.2
+    "damage": 30,
+    "block_risk": 0.30000000000000004
   },
   {
     "word": "そのセンス、救いようがない",
-    "damage": 10,
-    "block_risk": 0.1
+    "damage": 30,
+    "block_risk": 0.30000000000000004
   },
   {
     "word": "もう少し空気読もうよ",
-    "damage": 30,
-    "block_risk": 0.30000000000000004
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "君の存在感、希薄すぎ",
@@ -526,8 +526,8 @@
   },
   {
     "word": "頭固すぎでしょ",
-    "damage": 30,
-    "block_risk": 0.30000000000000004
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "もう少し柔軟性を持てば？",
@@ -551,8 +551,8 @@
   },
   {
     "word": "君の実力、お察し",
-    "damage": 20,
-    "block_risk": 0.2
+    "damage": 30,
+    "block_risk": 0.30000000000000004
   },
   {
     "word": "その程度で偉そうに",
@@ -561,8 +561,8 @@
   },
   {
     "word": "もう少し謙虚になれ",
-    "damage": 10,
-    "block_risk": 0.1
+    "damage": 20,
+    "block_risk": 0.2
   },
   {
     "word": "お前の人生、つまらなそう",
@@ -571,18 +571,18 @@
   },
   {
     "word": "その発言、恥ずかしくない？",
-    "damage": 20,
-    "block_risk": 0.2
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "もう少し現実見ろよ",
-    "damage": 20,
-    "block_risk": 0.2
+    "damage": 30,
+    "block_risk": 0.30000000000000004
   },
   {
     "word": "君の将来、心配になる",
-    "damage": 30,
-    "block_risk": 0.30000000000000004
+    "damage": 20,
+    "block_risk": 0.2
   },
   {
     "word": "そんなんじゃ相手にされない",
@@ -591,18 +591,18 @@
   },
   {
     "word": "その考え、浅すぎる",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "もう黙った方がマシ",
     "damage": 20,
     "block_risk": 0.2
   },
   {
-    "word": "君の価値、見当たらない",
+    "word": "もう黙った方がマシ",
     "damage": 30,
     "block_risk": 0.30000000000000004
+  },
+  {
+    "word": "君の価値、見当たらない",
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "そのセンス、壊滅的",
@@ -611,28 +611,28 @@
   },
   {
     "word": "顔も性格も微妙",
-    "damage": 10,
-    "block_risk": 0.1
+    "damage": 20,
+    "block_risk": 0.2
   },
   {
     "word": "もう帰っていいよ",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "君には理解不能でしょ",
-    "damage": 10,
-    "block_risk": 0.1
-  },
-  {
-    "word": "その程度の実力？",
     "damage": 30,
     "block_risk": 0.30000000000000004
   },
   {
-    "word": "もう諦めが肝心",
+    "word": "君には理解不能でしょ",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "その程度の実力？",
     "damage": 10,
     "block_risk": 0.1
+  },
+  {
+    "word": "もう諦めが肝心",
+    "damage": 20,
+    "block_risk": 0.2
   },
   {
     "word": "君には無縁だから",
@@ -646,33 +646,33 @@
   },
   {
     "word": "その発想、貧弱すぎ",
-    "damage": 10,
-    "block_risk": 0.1
+    "damage": 30,
+    "block_risk": 0.30000000000000004
   },
   {
     "word": "もう少し努力しなよ",
-    "damage": 20,
-    "block_risk": 0.2
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "君の話、興味ない",
-    "damage": 30,
-    "block_risk": 0.30000000000000004
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "そのリアクション、予想通り",
-    "damage": 20,
-    "block_risk": 0.2
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "頭の中、お花畑？",
-    "damage": 30,
-    "block_risk": 0.30000000000000004
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "もう帰宅時間でしょ",
-    "damage": 10,
-    "block_risk": 0.1
+    "damage": 20,
+    "block_risk": 0.2
   },
   {
     "word": "君には関係ない世界",
@@ -681,17 +681,17 @@
   },
   {
     "word": "その態度、最悪だね",
-    "damage": 20,
-    "block_risk": 0.2
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "もう少し自覚を持てば？",
-    "damage": 20,
-    "block_risk": 0.2
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "君の存在、邪魔なんだけど",
-    "damage": 10,
-    "block_risk": 0.1
+    "damage": 20,
+    "block_risk": 0.2
   }
 ]
