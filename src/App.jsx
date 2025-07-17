@@ -108,7 +108,7 @@ function App() {
     );
     
     return (
-      <div className="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50">
+      <div className="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50 p-4">
         {/* 勝利時のコンフェッティ */}
         {isVictory && (
           <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -122,7 +122,7 @@ function App() {
           </div>
         )}
         
-        <div className={`rounded-lg p-8 max-w-lg w-full mx-4 text-center transform transition-all duration-500 celebration ${
+        <div className={`rounded-lg p-4 sm:p-8 max-w-sm sm:max-w-lg w-full mx-4 text-center transform transition-all duration-500 celebration ${
           isVictory 
             ? 'bg-gradient-to-br from-yellow-600 to-orange-700 shadow-2xl shadow-yellow-500/50 glow' 
             : 'bg-gray-800'
@@ -136,11 +136,11 @@ function App() {
           )}
           
           <div className="relative z-10">
-            <div className={`text-8xl mb-6 ${isVictory ? 'float' : ''}`}>
+            <div className={`text-6xl sm:text-8xl mb-4 sm:mb-6 ${isVictory ? 'float' : ''}`}>
               {isVictory ? '👑' : '😵'}
             </div>
             
-            <h2 className={`text-4xl font-bold mb-4 ${
+            <h2 className={`text-2xl sm:text-4xl font-bold mb-3 sm:mb-4 ${
               isVictory 
                 ? 'text-yellow-100 victory-text' 
                 : 'text-white'
@@ -153,12 +153,12 @@ function App() {
             </h2>
             
             {isVictory && (
-              <div className="text-2xl mb-4 text-yellow-200 font-semibold sparkle">
+              <div className="text-lg sm:text-2xl mb-3 sm:mb-4 text-yellow-200 font-semibold sparkle">
                 {getText('レスバマスター', 'Мастер споров')}
               </div>
             )}
             
-            <p className={`text-lg mb-8 leading-relaxed ${
+            <p className={`text-base sm:text-lg mb-6 sm:mb-8 leading-relaxed ${
               isVictory 
                 ? 'text-yellow-100' 
                 : 'text-gray-300'
@@ -187,31 +187,31 @@ function App() {
             </p>
             
             {isVictory && (
-              <div className="grid grid-cols-3 gap-4 mb-8 text-yellow-200">
+              <div className="grid grid-cols-3 gap-2 sm:gap-4 mb-6 sm:mb-8 text-yellow-200">
                 <div className="text-center float" style={{animationDelay: '0.2s'}}>
-                  <div className="text-3xl mb-1">⚡</div>
-                  <div className="text-sm font-medium">{getText('超攻撃力', 'Сверхсила')}</div>
+                  <div className="text-2xl sm:text-3xl mb-1">⚡</div>
+                  <div className="text-xs sm:text-sm font-medium">{getText('超攻撃力', 'Сверхсила')}</div>
                 </div>
                 <div className="text-center float" style={{animationDelay: '0.4s'}}>
-                  <div className="text-3xl mb-1">🎯</div>
-                  <div className="text-sm font-medium">{getText('完璧な戦略', 'Идеальная стратегия')}</div>
+                  <div className="text-2xl sm:text-3xl mb-1">🎯</div>
+                  <div className="text-xs sm:text-sm font-medium">{getText('完璧な戦略', 'Идеальная стратегия')}</div>
                 </div>
                 <div className="text-center float" style={{animationDelay: '0.6s'}}>
-                  <div className="text-3xl mb-1">🧠</div>
-                  <div className="text-sm font-medium">{getText('圧倒的知性', 'Превосходный интеллект')}</div>
+                  <div className="text-2xl sm:text-3xl mb-1">🧠</div>
+                  <div className="text-xs sm:text-sm font-medium">{getText('圧倒的知性', 'Превосходный интеллект')}</div>
                 </div>
               </div>
             )}
             
             {isVictory && (
-              <div className="text-yellow-300 text-lg mb-6 font-bold sparkle">
+              <div className="text-yellow-300 text-base sm:text-lg mb-4 sm:mb-6 font-bold sparkle">
                 {getText('🎊 おめでとうございます！ 🎊', '🎊 Поздравляем! 🎊')}
               </div>
             )}
             
             <button
               onClick={resetGame}
-              className={`font-bold py-4 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 ${
+              className={`font-bold py-3 sm:py-4 px-6 sm:px-8 rounded-lg transition-all duration-300 transform hover:scale-105 text-sm sm:text-base ${
                 isVictory
                   ? 'bg-yellow-500 hover:bg-yellow-400 text-black shadow-lg hover:shadow-yellow-400/50 font-black'
                   : 'bg-blue-500 hover:bg-blue-600 text-white'

@@ -21,18 +21,18 @@ const ReplyOption = ({ badword, onSelect, disabled = false }) => {
       onClick={() => onSelect(badword)}
       disabled={disabled}
       className={`
-        w-full p-4 rounded-lg border-2 transition-all duration-200 
+        w-full p-3 sm:p-4 rounded-lg border-2 transition-all duration-200 
         ${disabled ? 'opacity-50 cursor-not-allowed' : 'cursor-pointer'}
         ${getDamageColor(badword.damage)}
         disabled:hover:bg-opacity-20
       `}
     >
       <div className="flex items-center justify-between">
-        <div className="flex-1 text-left">
-          <p className="text-white font-medium text-lg mb-1">
+        <div className="flex-1 text-left min-w-0">
+          <p className="text-white font-medium text-base sm:text-lg mb-1 truncate">
             {badword.word}
           </p>
-          <div className="flex items-center space-x-3 text-sm">
+          <div className="flex items-center space-x-2 sm:space-x-3 text-xs sm:text-sm">
             <span className="text-gray-300">
               ダメージ: {badword.damage}
             </span>
@@ -42,8 +42,8 @@ const ReplyOption = ({ badword, onSelect, disabled = false }) => {
           </div>
         </div>
         
-        <div className="flex-shrink-0 ml-4">
-          <span className="text-2xl">
+        <div className="flex-shrink-0 ml-2 sm:ml-4">
+          <span className="text-xl sm:text-2xl">
             {getDamageLabel(badword.damage)}
           </span>
         </div>

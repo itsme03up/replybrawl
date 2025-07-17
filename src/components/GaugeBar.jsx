@@ -32,13 +32,13 @@ const GaugeBar = ({ label, value, maxValue = 100, type = 'hp' }) => {
   return (
     <div className="w-full">
       <div className="flex justify-between items-center mb-2">
-        <span className="text-sm font-medium text-gray-300">{label}</span>
-        <span className="text-sm font-bold text-white">
+        <span className="text-xs sm:text-sm font-medium text-gray-300">{label}</span>
+        <span className="text-xs sm:text-sm font-bold text-white">
           {type === 'block' ? `${Math.round(percentage)}%` : `${value}/${maxValue}`}
         </span>
       </div>
       
-      <div className="w-full bg-gray-700 rounded-full h-3 overflow-hidden">
+      <div className="w-full bg-gray-700 rounded-full h-2 sm:h-3 overflow-hidden">
         <div 
           className={`h-full transition-all duration-500 ease-out rounded-full ${getBarColor()} ${getGlowEffect()}`}
           style={{ width: `${percentage}%` }}
