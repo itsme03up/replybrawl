@@ -72,31 +72,126 @@ function App() {
     return currentLanguage === 'ja' ? jaText : ruText;
   };
 
-  const GameOverScreen = () => (
-    <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50">
-      <div className="bg-gray-800 rounded-lg p-8 max-w-md w-full mx-4 text-center">
-        <div className="text-6xl mb-4">
-          {currentState.winner === 'player' ? '🎉' : '😵'}
+  const GameOverScreen = () => {
+    const isVictory = currentState.winner === 'player';
+    
+    // 勝利時のコンフェッティエフェクト
+    const ConfettiPiece = ({ delay, leftPosition }) => (
+      <div 
+        className="confetti"
+        style={{
+          left: `${leftPosition}%`,
+          animationDelay: `${delay}s`,
+          background: `hsl(${Math.random() * 360}, 70%, 60%)`
+        }}
+      />
+    );
+    
+    return (
+      <div className="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50">
+        {/* 勝利時のコンフェッティ */}
+        {isVictory && (
+          <div className="absolute inset-0 overflow-hidden pointer-events-none">
+            {[...Array(50)].map((_, i) => (
+              <ConfettiPiece 
+                key={i} 
+                delay={Math.random() * 3} 
+                leftPosition={Math.random() * 100} 
+              />
+            ))}
+          </div>
+        )}
+        
+        <div className={`rounded-lg p-8 max-w-lg w-full mx-4 text-center transform transition-all duration-500 celebration ${
+          isVictory 
+            ? 'bg-gradient-to-br from-yellow-600 to-orange-700 shadow-2xl shadow-yellow-500/50 glow' 
+            : 'bg-gray-800'
+        }`}>
+          {/* 勝利時の背景エフェクト */}
+          {isVictory && (
+            <>
+              <div className="absolute inset-0 rounded-lg bg-gradient-to-br from-yellow-400/20 to-orange-500/20 sparkle"></div>
+              <div className="absolute -top-2 -left-2 -right-2 -bottom-2 rounded-lg bg-gradient-to-br from-yellow-300/30 to-orange-400/30 blur-sm"></div>
+            </>
+          )}
+          
+          <div className="relative z-10">
+            <div className={`text-8xl mb-6 ${isVictory ? 'float' : ''}`}>
+              {isVictory ? '👑' : '😵'}
+            </div>
+            
+            <h2 className={`text-4xl font-bold mb-4 ${
+              isVictory 
+                ? 'text-yellow-100 victory-text' 
+                : 'text-white'
+            }`}>
+              {isVictory 
+                ? getText('🏆 完全勝利！ 🏆', '🏆 Полная победа! 🏆') 
+                : getText('ゲームオーバー', 'Игра окончена')}
+            </h2>
+            
+            {isVictory && (
+              <div className="text-2xl mb-4 text-yellow-200 font-semibold sparkle">
+                {getText('レスバマスター', 'Мастер споров')}
+              </div>
+            )}
+            
+            <p className={`text-lg mb-8 leading-relaxed ${
+              isVictory 
+                ? 'text-yellow-100' 
+                : 'text-gray-300'
+            }`}>
+              {isVictory 
+                ? getText(
+                    '相手のメンタルを完全に粉砕！\nあなたの議論スキルは最強です！', 
+                    'Вы полностью сломали психику соперника!\nВаши навыки спора непревзойденны!'
+                  ).split('\n').map((line, i) => (
+                    <span key={i}>
+                      {line}
+                      {i === 0 && <br />}
+                    </span>
+                  ))
+                : getText('ブロックされてしまいました...', 'Вас заблокировали...')}
+            </p>
+            
+            {isVictory && (
+              <div className="grid grid-cols-3 gap-4 mb-8 text-yellow-200">
+                <div className="text-center float" style={{animationDelay: '0.2s'}}>
+                  <div className="text-3xl mb-1">⚡</div>
+                  <div className="text-sm font-medium">{getText('超攻撃力', 'Сверхсила')}</div>
+                </div>
+                <div className="text-center float" style={{animationDelay: '0.4s'}}>
+                  <div className="text-3xl mb-1">🎯</div>
+                  <div className="text-sm font-medium">{getText('完璧な戦略', 'Идеальная стратегия')}</div>
+                </div>
+                <div className="text-center float" style={{animationDelay: '0.6s'}}>
+                  <div className="text-3xl mb-1">🧠</div>
+                  <div className="text-sm font-medium">{getText('圧倒的知性', 'Превосходный интеллект')}</div>
+                </div>
+              </div>
+            )}
+            
+            {isVictory && (
+              <div className="text-yellow-300 text-lg mb-6 font-bold sparkle">
+                {getText('🎊 おめでとうございます！ 🎊', '🎊 Поздравляем! 🎊')}
+              </div>
+            )}
+            
+            <button
+              onClick={resetGame}
+              className={`font-bold py-4 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 ${
+                isVictory
+                  ? 'bg-yellow-500 hover:bg-yellow-400 text-black shadow-lg hover:shadow-yellow-400/50 font-black'
+                  : 'bg-blue-500 hover:bg-blue-600 text-white'
+              }`}
+            >
+              {getText('もう一度プレイ', 'Играть снова')}
+            </button>
+          </div>
         </div>
-        <h2 className="text-2xl font-bold text-white mb-4">
-          {currentState.winner === 'player' 
-            ? getText('勝利！', 'Победа!') 
-            : getText('ゲームオーバー', 'Игра окончена')}
-        </h2>
-        <p className="text-gray-300 mb-6">
-          {currentState.winner === 'player' 
-            ? getText('相手のメンタルを完全に破壊しました！', 'Вы полностью сломали психику соперника!') 
-            : getText('ブロックされてしまいました...', 'Вас заблокировали...')}
-        </p>
-        <button
-          onClick={resetGame}
-          className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-lg transition-colors"
-        >
-          {getText('もう一度プレイ', 'Играть снова')}
-        </button>
       </div>
-    </div>
-  );
+    );
+  };
 
   return (
     <div className="min-h-screen bg-black text-white">
