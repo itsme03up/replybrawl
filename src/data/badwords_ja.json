@@ -1,1082 +1,902 @@
 [
   {
     "word": "3p",
-    "strength": 1,
-    "damage": 12,
-    "blockRisk": 0.1
-  },
-  {
-    "word": "sm",
-    "strength": 1,
-    "damage": 11,
-    "blockRisk": 0.1
-  },
-  {
-    "word": "xx",
-    "strength": 1,
-    "damage": 20,
-    "blockRisk": 0.1
-  },
-  {
-    "word": "アナル",
-    "strength": 1,
-    "damage": 13,
-    "blockRisk": 0.1
-  },
-  {
-    "word": "エッチ",
-    "strength": 1,
-    "damage": 19,
-    "blockRisk": 0.1
-  },
-  {
-    "word": "オカマ",
-    "strength": 1,
-    "damage": 14,
-    "blockRisk": 0.1
-  },
-  {
-    "word": "おしり",
-    "strength": 1,
-    "damage": 15,
-    "blockRisk": 0.1
-  },
-  {
-    "word": "オシリ",
-    "strength": 1,
-    "damage": 12,
-    "blockRisk": 0.1
-  },
-  {
-    "word": "お尻",
-    "strength": 1,
-    "damage": 16,
-    "blockRisk": 0.1
-  },
-  {
-    "word": "カント",
-    "strength": 1,
-    "damage": 20,
-    "blockRisk": 0.1
-  },
-  {
-    "word": "グロ",
-    "strength": 1,
-    "damage": 19,
-    "blockRisk": 0.1
-  },
-  {
-    "word": "しばり",
-    "strength": 1,
-    "damage": 18,
-    "blockRisk": 0.1
-  },
-  {
-    "word": "ちんこ",
-    "strength": 1,
-    "damage": 17,
-    "blockRisk": 0.1
-  },
-  {
-    "word": "デブ",
-    "strength": 1,
-    "damage": 16,
-    "blockRisk": 0.1
-  },
-  {
-    "word": "なめ",
-    "strength": 1,
-    "damage": 15,
-    "blockRisk": 0.1
-  },
-  {
-    "word": "ニガー",
-    "strength": 1,
-    "damage": 11,
-    "blockRisk": 0.1
-  },
-  {
-    "word": "ヌード",
-    "strength": 1,
-    "damage": 19,
-    "blockRisk": 0.1
-  },
-  {
-    "word": "ビッチ",
-    "strength": 1,
-    "damage": 13,
-    "blockRisk": 0.1
-  },
-  {
-    "word": "フック",
-    "strength": 1,
-    "damage": 16,
-    "blockRisk": 0.1
-  },
-  {
-    "word": "ペニス",
-    "strength": 1,
-    "damage": 14,
-    "blockRisk": 0.1
-  },
-  {
-    "word": "ホモ",
-    "strength": 1,
-    "damage": 18,
-    "blockRisk": 0.1
-  },
-  {
-    "word": "ポルノ",
-    "strength": 1,
-    "damage": 11,
-    "blockRisk": 0.1
-  },
-  {
-    "word": "まんこ",
-    "strength": 1,
-    "damage": 18,
-    "blockRisk": 0.1
-  },
-  {
-    "word": "やおい",
-    "strength": 1,
-    "damage": 15,
-    "blockRisk": 0.1
-  },
-  {
-    "word": "ラバー",
-    "strength": 1,
-    "damage": 16,
-    "blockRisk": 0.1
-  },
-  {
-    "word": "レイプ",
-    "strength": 1,
-    "damage": 20,
-    "blockRisk": 0.1
-  },
-  {
-    "word": "淫乱",
-    "strength": 1,
-    "damage": 12,
-    "blockRisk": 0.1
-  },
-  {
-    "word": "陰毛",
-    "strength": 1,
-    "damage": 11,
-    "blockRisk": 0.1
-  },
-  {
-    "word": "革抑制",
-    "strength": 1,
-    "damage": 17,
-    "blockRisk": 0.1
-  },
-  {
-    "word": "騎上位",
-    "strength": 1,
-    "damage": 16,
-    "blockRisk": 0.1
-  },
-  {
-    "word": "巨根",
-    "strength": 1,
-    "damage": 11,
-    "blockRisk": 0.1
-  },
-  {
-    "word": "巨乳",
-    "strength": 1,
-    "damage": 17,
-    "blockRisk": 0.1
-  },
-  {
-    "word": "強姦犯",
-    "strength": 1,
-    "damage": 16,
-    "blockRisk": 0.1
-  },
-  {
-    "word": "玉なめ",
-    "strength": 1,
-    "damage": 18,
-    "blockRisk": 0.1
-  },
-  {
-    "word": "玉舐め",
-    "strength": 1,
-    "damage": 20,
-    "blockRisk": 0.1
-  },
-  {
-    "word": "緊縛",
-    "strength": 1,
-    "damage": 15,
-    "blockRisk": 0.1
-  },
-  {
-    "word": "嫌い",
-    "strength": 1,
-    "damage": 16,
-    "blockRisk": 0.1
-  },
-  {
-    "word": "後背位",
-    "strength": 1,
-    "damage": 18,
-    "blockRisk": 0.1
-  },
-  {
-    "word": "拷問",
-    "strength": 1,
-    "damage": 19,
-    "blockRisk": 0.1
-  },
-  {
-    "word": "殺し方",
-    "strength": 1,
-    "damage": 15,
-    "blockRisk": 0.1
-  },
-  {
-    "word": "支配",
-    "strength": 1,
-    "damage": 15,
-    "blockRisk": 0.1
-  },
-  {
-    "word": "射精",
-    "strength": 1,
-    "damage": 19,
-    "blockRisk": 0.1
-  },
-  {
-    "word": "手コキ",
-    "strength": 1,
-    "damage": 17,
-    "blockRisk": 0.1
-  },
-  {
-    "word": "獣姦",
-    "strength": 1,
-    "damage": 14,
-    "blockRisk": 0.1
-  },
-  {
-    "word": "女の子",
-    "strength": 1,
-    "damage": 14,
-    "blockRisk": 0.1
-  },
-  {
-    "word": "女王様",
-    "strength": 1,
-    "damage": 12,
-    "blockRisk": 0.1
-  },
-  {
-    "word": "女装",
-    "strength": 1,
-    "damage": 17,
-    "blockRisk": 0.1
-  },
-  {
-    "word": "人妻",
-    "strength": 1,
-    "damage": 20,
-    "blockRisk": 0.1
-  },
-  {
-    "word": "人種",
-    "strength": 1,
-    "damage": 12,
-    "blockRisk": 0.1
-  },
-  {
-    "word": "性交",
-    "strength": 1,
-    "damage": 14,
-    "blockRisk": 0.1
-  },
-  {
-    "word": "正常位",
-    "strength": 1,
-    "damage": 17,
-    "blockRisk": 0.1
-  },
-  {
-    "word": "生殖器",
-    "strength": 1,
-    "damage": 15,
-    "blockRisk": 0.1
-  },
-  {
-    "word": "精液",
-    "strength": 1,
-    "damage": 16,
-    "blockRisk": 0.1
-  },
-  {
-    "word": "挿入",
-    "strength": 1,
-    "damage": 16,
-    "blockRisk": 0.1
-  },
-  {
-    "word": "大陰唇",
-    "strength": 1,
     "damage": 10,
-    "blockRisk": 0.1
-  },
-  {
-    "word": "脱衣",
-    "strength": 1,
-    "damage": 16,
-    "blockRisk": 0.1
-  },
-  {
-    "word": "中出し",
-    "strength": 1,
-    "damage": 20,
-    "blockRisk": 0.1
-  },
-  {
-    "word": "直腸",
-    "strength": 1,
-    "damage": 10,
-    "blockRisk": 0.1
-  },
-  {
-    "word": "剃毛",
-    "strength": 1,
-    "damage": 20,
-    "blockRisk": 0.1
-  },
-  {
-    "word": "貞操帯",
-    "strength": 1,
-    "damage": 10,
-    "blockRisk": 0.1
-  },
-  {
-    "word": "奴隷",
-    "strength": 1,
-    "damage": 15,
-    "blockRisk": 0.1
-  },
-  {
-    "word": "二穴",
-    "strength": 1,
-    "damage": 11,
-    "blockRisk": 0.1
-  },
-  {
-    "word": "乳首",
-    "strength": 1,
-    "damage": 16,
-    "blockRisk": 0.1
-  },
-  {
-    "word": "覗き",
-    "strength": 1,
-    "damage": 10,
-    "blockRisk": 0.1
-  },
-  {
-    "word": "売春婦",
-    "strength": 1,
-    "damage": 20,
-    "blockRisk": 0.1
-  },
-  {
-    "word": "縛り",
-    "strength": 1,
-    "damage": 10,
-    "blockRisk": 0.1
-  },
-  {
-    "word": "噴出",
-    "strength": 1,
-    "damage": 18,
-    "blockRisk": 0.1
-  },
-  {
-    "word": "糞",
-    "strength": 1,
-    "damage": 19,
-    "blockRisk": 0.1
-  },
-  {
-    "word": "糞便",
-    "strength": 1,
-    "damage": 10,
-    "blockRisk": 0.1
-  },
-  {
-    "word": "変態",
-    "strength": 1,
-    "damage": 20,
-    "blockRisk": 0.1
-  },
-  {
-    "word": "夢精",
-    "strength": 1,
-    "damage": 14,
-    "blockRisk": 0.1
-  },
-  {
-    "word": "毛深い",
-    "strength": 1,
-    "damage": 11,
-    "blockRisk": 0.1
-  },
-  {
-    "word": "誘惑",
-    "strength": 1,
-    "damage": 12,
-    "blockRisk": 0.1
-  },
-  {
-    "word": "裸",
-    "strength": 1,
-    "damage": 19,
-    "blockRisk": 0.1
-  },
-  {
-    "word": "乱交",
-    "strength": 1,
-    "damage": 15,
-    "blockRisk": 0.1
-  },
-  {
-    "word": "両性",
-    "strength": 1,
-    "damage": 16,
-    "blockRisk": 0.1
-  },
-  {
-    "word": "両刀",
-    "strength": 1,
-    "damage": 17,
-    "blockRisk": 0.1
-  },
-  {
-    "word": "輪姦",
-    "strength": 1,
-    "damage": 13,
-    "blockRisk": 0.1
-  },
-  {
-    "word": "卍",
-    "strength": 1,
-    "damage": 20,
-    "blockRisk": 0.1
-  },
-  {
-    "word": "宦官",
-    "strength": 1,
-    "damage": 18,
-    "blockRisk": 0.1
-  },
-  {
-    "word": "肛門",
-    "strength": 1,
-    "damage": 16,
-    "blockRisk": 0.1
-  },
-  {
-    "word": "膣",
-    "strength": 1,
-    "damage": 11,
-    "blockRisk": 0.1
+    "block_risk": 0.1
   },
   {
     "word": "g スポット",
-    "strength": 2,
-    "damage": 22,
-    "blockRisk": 0.3
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "s ＆ m",
-    "strength": 2,
-    "damage": 31,
-    "blockRisk": 0.3
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "sm",
+    "damage": 20,
+    "block_risk": 0.2
   },
   {
     "word": "sm女王",
-    "strength": 2,
-    "damage": 35,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "アスホール",
-    "strength": 2,
     "damage": 20,
-    "blockRisk": 0.3
+    "block_risk": 0.2
   },
   {
-    "word": "アナリングス",
-    "strength": 2,
-    "damage": 23,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "いたずら",
-    "strength": 2,
-    "damage": 24,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "イラマチオ",
-    "strength": 2,
-    "damage": 35,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "エクスタシー",
-    "strength": 2,
-    "damage": 31,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "エスコート",
-    "strength": 2,
-    "damage": 32,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "エロティズム",
-    "strength": 2,
-    "damage": 33,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "エロティック",
-    "strength": 2,
-    "damage": 33,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "オーガズム",
-    "strength": 2,
-    "damage": 33,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "おしっこ",
-    "strength": 2,
-    "damage": 29,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "おしりのあな",
-    "strength": 2,
-    "damage": 29,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "おっぱい",
-    "strength": 2,
-    "damage": 22,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "オッパイ",
-    "strength": 2,
-    "damage": 30,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "オナニー",
-    "strength": 2,
-    "damage": 27,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "オマンコ",
-    "strength": 2,
-    "damage": 27,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "おもらし",
-    "strength": 2,
-    "damage": 34,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "クリトリス",
-    "strength": 2,
-    "damage": 24,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "ゲイボーイ",
-    "strength": 2,
-    "damage": 23,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "コカイン",
-    "strength": 2,
-    "damage": 31,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "ゴックン",
-    "strength": 2,
-    "damage": 32,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "サディズム",
-    "strength": 2,
-    "damage": 27,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "スウィンガー",
-    "strength": 2,
-    "damage": 26,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "スカートの中",
-    "strength": 2,
-    "damage": 34,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "スカトロ",
-    "strength": 2,
-    "damage": 33,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "スラット",
-    "strength": 2,
-    "damage": 22,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "スリット",
-    "strength": 2,
-    "damage": 23,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "セクシーな",
-    "strength": 2,
-    "damage": 28,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "セックス",
-    "strength": 2,
-    "damage": 29,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "ソドミー",
-    "strength": 2,
-    "damage": 35,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "ディック",
-    "strength": 2,
-    "damage": 27,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "ディルド",
-    "strength": 2,
-    "damage": 33,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "デートレイプ",
-    "strength": 2,
-    "damage": 22,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "トップレス",
-    "strength": 2,
-    "damage": 24,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "ネオ・ナチ",
-    "strength": 2,
-    "damage": 33,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "ハードコア",
-    "strength": 2,
-    "damage": 26,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "パイパン",
-    "strength": 2,
-    "damage": 24,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "パンティー",
-    "strength": 2,
+    "word": "xx",
     "damage": 20,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "ファック",
-    "strength": 2,
-    "damage": 25,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "ファンタジー",
-    "strength": 2,
-    "damage": 25,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "フィスト",
-    "strength": 2,
-    "damage": 31,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "フェラチオ",
-    "strength": 2,
-    "damage": 28,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "ふたなり",
-    "strength": 2,
-    "damage": 20,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "ぶっかけ",
-    "strength": 2,
-    "damage": 22,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "プレイボーイ",
-    "strength": 2,
-    "damage": 20,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "ベアバック",
-    "strength": 2,
-    "damage": 23,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "ペニスバンド",
-    "strength": 2,
-    "damage": 24,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "ボーイズラブ",
-    "strength": 2,
-    "damage": 29,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "ボールギャグ",
-    "strength": 2,
-    "damage": 30,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "ぽっちゃり",
-    "strength": 2,
-    "damage": 24,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "ボンテージ",
-    "strength": 2,
-    "damage": 24,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "やりまん",
-    "strength": 2,
-    "damage": 33,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "ラティーナ",
-    "strength": 2,
-    "damage": 26,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "ランジェリー",
-    "strength": 2,
-    "damage": 25,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "レズビアン",
-    "strength": 2,
-    "damage": 22,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "ローター",
-    "strength": 2,
-    "damage": 27,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "ロリータ",
-    "strength": 2,
-    "damage": 30,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "近親相姦",
-    "strength": 2,
-    "damage": 35,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "合意の性交",
-    "strength": 2,
-    "damage": 21,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "殺人事件",
-    "strength": 2,
-    "damage": 30,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "殺人方法",
-    "strength": 2,
-    "damage": 27,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "児童性虐待",
-    "strength": 2,
-    "damage": 20,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "自己愛性",
-    "strength": 2,
-    "damage": 25,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "女子高生",
-    "strength": 2,
-    "damage": 30,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "新しいポルノ",
-    "strength": 2,
-    "damage": 28,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "足フェチ",
-    "strength": 2,
-    "damage": 30,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "足を広げる",
-    "strength": 2,
-    "damage": 27,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "潮吹き女",
-    "strength": 2,
-    "damage": 24,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "潮吹き男性",
-    "strength": 2,
-    "damage": 24,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "尿道プレイ",
-    "strength": 2,
-    "damage": 29,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "糞尿愛好症",
-    "strength": 2,
-    "damage": 33,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "平手打ち",
-    "strength": 2,
-    "damage": 21,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "勃起する",
-    "strength": 2,
-    "damage": 34,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "幼児性愛者",
-    "strength": 2,
-    "damage": 24,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "裸の女性",
-    "strength": 2,
-    "damage": 33,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "両性具有",
-    "strength": 2,
-    "damage": 33,
-    "blockRisk": 0.3
+    "block_risk": 0.2
   },
   {
     "word": "アジアのかわいい女の子",
-    "strength": 3,
-    "damage": 42,
-    "blockRisk": 0.5
+    "damage": 30,
+    "block_risk": 0.30000000000000004
+  },
+  {
+    "word": "アスホール",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "アナリングス",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "アナル",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "いたずら",
+    "damage": 30,
+    "block_risk": 0.30000000000000004
+  },
+  {
+    "word": "イラマチオ",
+    "damage": 30,
+    "block_risk": 0.30000000000000004
+  },
+  {
+    "word": "エクスタシー",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "エスコート",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "エッチ",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "エロティズム",
+    "damage": 30,
+    "block_risk": 0.30000000000000004
+  },
+  {
+    "word": "エロティック",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "オーガズム",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "オカマ",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "おしっこ",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "おしり",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "オシリ",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "おしりのあな",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "おっぱい",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "オッパイ",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "オナニー",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "オマンコ",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "おもらし",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "お尻",
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "カーマスートラ",
-    "strength": 3,
-    "damage": 45,
-    "blockRisk": 0.5
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "カント",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "クリトリス",
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "グループ・セックス",
-    "strength": 3,
-    "damage": 37,
-    "blockRisk": 0.5
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "グロ",
+    "damage": 30,
+    "block_risk": 0.30000000000000004
   },
   {
     "word": "クンニリングス",
-    "strength": 3,
-    "damage": 46,
-    "blockRisk": 0.5
+    "damage": 20,
+    "block_risk": 0.2
   },
   {
     "word": "ゲイ・セックス",
-    "strength": 3,
-    "damage": 33,
-    "blockRisk": 0.5
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "ゲイボーイ",
+    "damage": 20,
+    "block_risk": 0.2
   },
   {
     "word": "ゴールデンシャワー",
-    "strength": 3,
-    "damage": 34,
-    "blockRisk": 0.5
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "コカイン",
+    "damage": 30,
+    "block_risk": 0.30000000000000004
+  },
+  {
+    "word": "ゴックン",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "サディズム",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "しばり",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "スウィンガー",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "スカートの中",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "スカトロ",
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "ストラップオン",
-    "strength": 3,
-    "damage": 42,
-    "blockRisk": 0.5
+    "damage": 20,
+    "block_risk": 0.2
   },
   {
     "word": "ストリップ劇場",
-    "strength": 3,
-    "damage": 46,
-    "blockRisk": 0.5
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "スラット",
+    "damage": 30,
+    "block_risk": 0.30000000000000004
+  },
+  {
+    "word": "スリット",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "セクシーな",
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "セクシーな 10 代",
-    "strength": 3,
-    "damage": 34,
-    "blockRisk": 0.5
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "セックス",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "ソドミー",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "ちんこ",
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "ディープ・スロート",
-    "strength": 3,
-    "damage": 33,
-    "blockRisk": 0.5
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "ディック",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "ディルド",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "デートレイプ",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "デブ",
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "テレフォンセックス",
-    "strength": 3,
-    "damage": 41,
-    "blockRisk": 0.5
+    "damage": 20,
+    "block_risk": 0.2
   },
   {
     "word": "ドッグスタイル",
-    "strength": 3,
-    "damage": 50,
-    "blockRisk": 0.5
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "トップレス",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "なめ",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "ニガー",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "ヌード",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "ネオ・ナチ",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "ハードコア",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "パイパン",
+    "damage": 20,
+    "block_risk": 0.2
   },
   {
     "word": "バイブレーター",
-    "strength": 3,
-    "damage": 49,
-    "blockRisk": 0.5
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "バック・スタイル",
-    "strength": 3,
-    "damage": 34,
-    "blockRisk": 0.5
+    "damage": 30,
+    "block_risk": 0.30000000000000004
+  },
+  {
+    "word": "パンティー",
+    "damage": 30,
+    "block_risk": 0.30000000000000004
+  },
+  {
+    "word": "ビッチ",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "ファック",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "ファンタジー",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "フィスト",
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "フェティッシュ",
-    "strength": 3,
-    "damage": 36,
-    "blockRisk": 0.5
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "フェラチオ",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "ふたなり",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "ぶっかけ",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "フック",
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "プリンス アルバート ピアス",
-    "strength": 3,
-    "damage": 35,
-    "blockRisk": 0.5
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "プレイボーイ",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "ベアバック",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "ペニス",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "ペニスバンド",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "ボーイズラブ",
+    "damage": 30,
+    "block_risk": 0.30000000000000004
+  },
+  {
+    "word": "ボールギャグ",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "ぽっちゃり",
+    "damage": 30,
+    "block_risk": 0.30000000000000004
+  },
+  {
+    "word": "ホモ",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "ポルノ",
+    "damage": 20,
+    "block_risk": 0.2
   },
   {
     "word": "ポルノグラフィー",
-    "strength": 3,
-    "damage": 38,
-    "blockRisk": 0.5
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "ボンテージ",
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "マザー・ファッカー",
-    "strength": 3,
-    "damage": 40,
-    "blockRisk": 0.5
+    "damage": 30,
+    "block_risk": 0.30000000000000004
   },
   {
     "word": "マスターベーション",
-    "strength": 3,
-    "damage": 40,
-    "blockRisk": 0.5
+    "damage": 30,
+    "block_risk": 0.30000000000000004
+  },
+  {
+    "word": "まんこ",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "やおい",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "やりまん",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "ラティーナ",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "ラバー",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "ランジェリー",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "レイプ",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "レズビアン",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "ローター",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "ロリータ",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "淫乱",
+    "damage": 30,
+    "block_risk": 0.30000000000000004
+  },
+  {
+    "word": "陰毛",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "革抑制",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "騎上位",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "巨根",
+    "damage": 30,
+    "block_risk": 0.30000000000000004
+  },
+  {
+    "word": "巨乳",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "強姦犯",
+    "damage": 30,
+    "block_risk": 0.30000000000000004
+  },
+  {
+    "word": "玉なめ",
+    "damage": 30,
+    "block_risk": 0.30000000000000004
+  },
+  {
+    "word": "玉舐め",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "緊縛",
+    "damage": 30,
+    "block_risk": 0.30000000000000004
+  },
+  {
+    "word": "近親相姦",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "嫌い",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "後背位",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "合意の性交",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "拷問",
+    "damage": 30,
+    "block_risk": 0.30000000000000004
+  },
+  {
+    "word": "殺し方",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "殺人事件",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "殺人方法",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "支配",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "児童性虐待",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "自己愛性",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "射精",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "手コキ",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "獣姦",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "女の子",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "女王様",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "女子高生",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "女装",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "新しいポルノ",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "人妻",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "人種",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "性交",
+    "damage": 30,
+    "block_risk": 0.30000000000000004
+  },
+  {
+    "word": "正常位",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "生殖器",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "精液",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "挿入",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "足フェチ",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "足を広げる",
+    "damage": 30,
+    "block_risk": 0.30000000000000004
+  },
+  {
+    "word": "大陰唇",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "脱衣",
+    "damage": 20,
+    "block_risk": 0.2
   },
   {
     "word": "茶色のシャワー",
-    "strength": 3,
-    "damage": 35,
-    "blockRisk": 0.5
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "中出し",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "潮吹き女",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "潮吹き男性",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "直腸",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "剃毛",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "貞操帯",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "奴隷",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "二穴",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "乳首",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "尿道プレイ",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "覗き",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "売春婦",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "縛り",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "噴出",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "糞",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "糞尿愛好症",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "糞便",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "平手打ち",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "変態",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "勃起する",
+    "damage": 30,
+    "block_risk": 0.30000000000000004
+  },
+  {
+    "word": "夢精",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "毛深い",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "誘惑",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "幼児性愛者",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "裸",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "裸の女性",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "乱交",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "両性",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "両性具有",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "両刀",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "輪姦",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "卍",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "宦官",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "肛門",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "膣",
+    "damage": 20,
+    "block_risk": 0.2
   }
 ]

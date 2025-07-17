@@ -1,908 +1,757 @@
 [
   {
-    "word": "byk",
-    "strength": 1,
-    "damage": 16,
-    "blockRisk": 0.1
-  },
-  {
-    "word": "gol",
-    "strength": 1,
-    "damage": 10,
-    "blockRisk": 0.1
-  },
-  {
-    "word": "хуй",
-    "strength": 1,
-    "damage": 15,
-    "blockRisk": 0.1
-  },
-  {
-    "word": "ebalo",
-    "strength": 2,
-    "damage": 25,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "mudack",
-    "strength": 2,
-    "damage": 21,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "otsosi",
-    "strength": 2,
-    "damage": 20,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "padlo",
-    "strength": 2,
-    "damage": 33,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "pedik",
-    "strength": 2,
-    "damage": 33,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "perdet",
-    "strength": 2,
-    "damage": 27,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "petuh",
-    "strength": 2,
-    "damage": 24,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "pizda",
-    "strength": 2,
-    "damage": 31,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "poeben",
-    "strength": 2,
-    "damage": 31,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "uboy",
-    "strength": 2,
-    "damage": 26,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "vafl'a",
-    "strength": 2,
-    "damage": 29,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "zaebis",
-    "strength": 2,
-    "damage": 27,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "zalupa",
-    "strength": 2,
-    "damage": 23,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "zassat",
-    "strength": 2,
-    "damage": 24,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "блядки",
-    "strength": 2,
-    "damage": 27,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "блядь",
-    "strength": 2,
-    "damage": 31,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "бугор",
-    "strength": 2,
-    "damage": 29,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "гандон",
-    "strength": 2,
-    "damage": 32,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "говно",
-    "strength": 2,
-    "damage": 27,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "говнюк",
-    "strength": 2,
-    "damage": 32,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "голый",
-    "strength": 2,
-    "damage": 23,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "дерьмо",
-    "strength": 2,
-    "damage": 32,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "ёбарь",
-    "strength": 2,
-    "damage": 21,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "ебать",
-    "strength": 2,
-    "damage": 32,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "ебло",
-    "strength": 2,
-    "damage": 29,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "ебнуть",
-    "strength": 2,
-    "damage": 24,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "жопа",
-    "strength": 2,
-    "damage": 20,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "манда",
-    "strength": 2,
-    "damage": 25,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "мент",
-    "strength": 2,
-    "damage": 33,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "муда",
-    "strength": 2,
-    "damage": 34,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "мудило",
-    "strength": 2,
-    "damage": 32,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "на фиг",
-    "strength": 2,
-    "damage": 20,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "на хуй",
-    "strength": 2,
-    "damage": 22,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "на хуя",
-    "strength": 2,
-    "damage": 30,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "ни хуя",
-    "strength": 2,
-    "damage": 20,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "охуеть",
-    "strength": 2,
-    "damage": 29,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "секс",
-    "strength": 2,
-    "damage": 21,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "сиськи",
-    "strength": 2,
-    "damage": 23,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "срать",
-    "strength": 2,
-    "damage": 21,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "ссать",
-    "strength": 2,
-    "damage": 34,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "фига",
-    "strength": 2,
-    "damage": 26,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "хапать",
-    "strength": 2,
-    "damage": 21,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "хохол",
-    "strength": 2,
-    "damage": 26,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "хрен",
-    "strength": 2,
-    "damage": 26,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "хуёво",
-    "strength": 2,
-    "damage": 28,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "хуёвый",
-    "strength": 2,
-    "damage": 30,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "хуило",
-    "strength": 2,
-    "damage": 27,
-    "blockRisk": 0.3
-  },
-  {
-    "word": "хуиня",
-    "strength": 2,
-    "damage": 31,
-    "blockRisk": 0.3
-  },
-  {
     "word": "bychara",
-    "strength": 3,
-    "damage": 37,
-    "blockRisk": 0.5
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "byk",
+    "damage": 30,
+    "block_risk": 0.30000000000000004
   },
   {
     "word": "chernozhopyi",
-    "strength": 3,
-    "damage": 50,
-    "blockRisk": 0.5
+    "damage": 20,
+    "block_risk": 0.2
   },
   {
     "word": "dolboy'eb",
-    "strength": 3,
-    "damage": 33,
-    "blockRisk": 0.5
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "ebalnik",
-    "strength": 3,
-    "damage": 47,
-    "blockRisk": 0.5
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "ebalo",
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "ebalom sch'elkat",
-    "strength": 3,
-    "damage": 32,
-    "blockRisk": 0.5
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "gol",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "mudack",
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "opizdenet",
-    "strength": 3,
-    "damage": 41,
-    "blockRisk": 0.5
+    "damage": 20,
+    "block_risk": 0.2
   },
   {
     "word": "osto'eblo",
-    "strength": 3,
-    "damage": 30,
-    "blockRisk": 0.5
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "ostokhuitel'no",
-    "strength": 3,
-    "damage": 44,
-    "blockRisk": 0.5
+    "damage": 30,
+    "block_risk": 0.30000000000000004
   },
   {
     "word": "ot'ebis",
-    "strength": 3,
-    "damage": 43,
-    "blockRisk": 0.5
+    "damage": 20,
+    "block_risk": 0.2
   },
   {
     "word": "otmudohat",
-    "strength": 3,
-    "damage": 43,
-    "blockRisk": 0.5
+    "damage": 20,
+    "block_risk": 0.2
   },
   {
     "word": "otpizdit",
-    "strength": 3,
-    "damage": 44,
-    "blockRisk": 0.5
+    "damage": 30,
+    "block_risk": 0.30000000000000004
+  },
+  {
+    "word": "otsosi",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "padlo",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "pedik",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "perdet",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "petuh",
+    "damage": 20,
+    "block_risk": 0.2
   },
   {
     "word": "pidar gnoinyj",
-    "strength": 3,
-    "damage": 30,
-    "blockRisk": 0.5
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "pizda",
+    "damage": 20,
+    "block_risk": 0.2
   },
   {
     "word": "pizdato",
-    "strength": 3,
-    "damage": 44,
-    "blockRisk": 0.5
+    "damage": 30,
+    "block_risk": 0.30000000000000004
   },
   {
     "word": "pizdatyi",
-    "strength": 3,
-    "damage": 39,
-    "blockRisk": 0.5
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "piz'det",
-    "strength": 3,
-    "damage": 45,
-    "blockRisk": 0.5
+    "damage": 20,
+    "block_risk": 0.2
   },
   {
     "word": "pizdetc",
-    "strength": 3,
-    "damage": 38,
-    "blockRisk": 0.5
+    "damage": 20,
+    "block_risk": 0.2
   },
   {
     "word": "pizdoi nakryt'sja",
-    "strength": 3,
-    "damage": 36,
-    "blockRisk": 0.5
+    "damage": 20,
+    "block_risk": 0.2
   },
   {
     "word": "pizd'uk",
-    "strength": 3,
-    "damage": 45,
-    "blockRisk": 0.5
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "piz`dyulina",
-    "strength": 3,
-    "damage": 30,
-    "blockRisk": 0.5
+    "damage": 20,
+    "block_risk": 0.2
   },
   {
     "word": "podi ku'evo",
-    "strength": 3,
-    "damage": 33,
-    "blockRisk": 0.5
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "poeben",
+    "damage": 30,
+    "block_risk": 0.30000000000000004
   },
   {
     "word": "po'imat' na konchik",
-    "strength": 3,
-    "damage": 40,
-    "blockRisk": 0.5
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "po'iti posrat",
-    "strength": 3,
-    "damage": 37,
-    "blockRisk": 0.5
+    "damage": 20,
+    "block_risk": 0.2
   },
   {
     "word": "po khuy",
-    "strength": 3,
-    "damage": 36,
-    "blockRisk": 0.5
+    "damage": 30,
+    "block_risk": 0.30000000000000004
   },
   {
     "word": "poluchit pizdy",
-    "strength": 3,
-    "damage": 48,
-    "blockRisk": 0.5
+    "damage": 30,
+    "block_risk": 0.30000000000000004
   },
   {
     "word": "pososi moyu konfetku",
-    "strength": 3,
-    "damage": 46,
-    "blockRisk": 0.5
+    "damage": 30,
+    "block_risk": 0.30000000000000004
   },
   {
     "word": "prissat",
-    "strength": 3,
-    "damage": 38,
-    "blockRisk": 0.5
+    "damage": 20,
+    "block_risk": 0.2
   },
   {
     "word": "proebat",
-    "strength": 3,
-    "damage": 42,
-    "blockRisk": 0.5
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "promudobl'adsksya pizdopro'ebina",
-    "strength": 3,
-    "damage": 41,
-    "blockRisk": 0.5
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "propezdoloch",
-    "strength": 3,
-    "damage": 47,
-    "blockRisk": 0.5
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "prosrat",
-    "strength": 3,
-    "damage": 38,
-    "blockRisk": 0.5
+    "damage": 20,
+    "block_risk": 0.2
   },
   {
     "word": "raspeezdeyi",
-    "strength": 3,
-    "damage": 43,
-    "blockRisk": 0.5
+    "damage": 20,
+    "block_risk": 0.2
   },
   {
     "word": "raspizdatyi",
-    "strength": 3,
-    "damage": 45,
-    "blockRisk": 0.5
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "raz'yebuy",
-    "strength": 3,
-    "damage": 37,
-    "blockRisk": 0.5
+    "damage": 30,
+    "block_risk": 0.30000000000000004
   },
   {
     "word": "raz'yoba",
-    "strength": 3,
-    "damage": 50,
-    "blockRisk": 0.5
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "s'ebat'sya",
-    "strength": 3,
-    "damage": 47,
-    "blockRisk": 0.5
+    "damage": 30,
+    "block_risk": 0.30000000000000004
   },
   {
     "word": "shalava",
-    "strength": 3,
-    "damage": 39,
-    "blockRisk": 0.5
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "styervo",
-    "strength": 3,
-    "damage": 34,
-    "blockRisk": 0.5
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "sukin syn",
-    "strength": 3,
-    "damage": 39,
-    "blockRisk": 0.5
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "svodit posrat",
-    "strength": 3,
-    "damage": 45,
-    "blockRisk": 0.5
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "svoloch",
-    "strength": 3,
-    "damage": 40,
-    "blockRisk": 0.5
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "trakhat'sya",
-    "strength": 3,
-    "damage": 37,
-    "blockRisk": 0.5
+    "damage": 20,
+    "block_risk": 0.2
   },
   {
     "word": "trimandoblydskiy pizdoproyob",
-    "strength": 3,
-    "damage": 35,
-    "blockRisk": 0.5
+    "damage": 20,
+    "block_risk": 0.2
   },
   {
     "word": "ubl'yudok",
-    "strength": 3,
-    "damage": 35,
-    "blockRisk": 0.5
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "uboy",
+    "damage": 20,
+    "block_risk": 0.2
   },
   {
     "word": "u'ebitsche",
-    "strength": 3,
-    "damage": 31,
-    "blockRisk": 0.5
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "vafl'a",
+    "damage": 20,
+    "block_risk": 0.2
   },
   {
     "word": "vafli lovit",
-    "strength": 3,
-    "damage": 38,
-    "blockRisk": 0.5
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "v pizdu",
-    "strength": 3,
-    "damage": 46,
-    "blockRisk": 0.5
+    "damage": 20,
+    "block_risk": 0.2
   },
   {
     "word": "vyperdysh",
-    "strength": 3,
-    "damage": 44,
-    "blockRisk": 0.5
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "vzdrochennyi",
-    "strength": 3,
-    "damage": 38,
-    "blockRisk": 0.5
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "yeb vas",
-    "strength": 3,
-    "damage": 38,
-    "blockRisk": 0.5
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "za'ebat",
-    "strength": 3,
-    "damage": 36,
-    "blockRisk": 0.5
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "zaebis",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "zalupa",
+    "damage": 30,
+    "block_risk": 0.30000000000000004
   },
   {
     "word": "zalupat",
-    "strength": 3,
-    "damage": 36,
-    "blockRisk": 0.5
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "zasranetc",
-    "strength": 3,
-    "damage": 40,
-    "blockRisk": 0.5
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "zassat",
+    "damage": 30,
+    "block_risk": 0.30000000000000004
   },
   {
     "word": "zlo'ebuchy",
-    "strength": 3,
-    "damage": 31,
-    "blockRisk": 0.5
+    "damage": 20,
+    "block_risk": 0.2
   },
   {
     "word": "бздёнок",
-    "strength": 3,
-    "damage": 33,
-    "blockRisk": 0.5
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "блядки",
+    "damage": 30,
+    "block_risk": 0.30000000000000004
   },
   {
     "word": "блядовать",
-    "strength": 3,
-    "damage": 40,
-    "blockRisk": 0.5
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "блядство",
-    "strength": 3,
-    "damage": 35,
-    "blockRisk": 0.5
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "блядь",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "бугор",
+    "damage": 30,
+    "block_risk": 0.30000000000000004
   },
   {
     "word": "во пизду",
-    "strength": 3,
-    "damage": 41,
-    "blockRisk": 0.5
+    "damage": 20,
+    "block_risk": 0.2
   },
   {
     "word": "встать раком",
-    "strength": 3,
-    "damage": 43,
-    "blockRisk": 0.5
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "выёбываться",
-    "strength": 3,
-    "damage": 49,
-    "blockRisk": 0.5
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "гандон",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "говно",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "говнюк",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "голый",
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "дать пизды",
-    "strength": 3,
-    "damage": 43,
-    "blockRisk": 0.5
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "дерьмо",
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "дрочить",
-    "strength": 3,
-    "damage": 40,
-    "blockRisk": 0.5
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "другой дразнится",
-    "strength": 3,
-    "damage": 48,
-    "blockRisk": 0.5
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "ёбарь",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "ебать",
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "ебать-копать",
-    "strength": 3,
-    "damage": 30,
-    "blockRisk": 0.5
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "ебло",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "ебнуть",
+    "damage": 20,
+    "block_risk": 0.2
   },
   {
     "word": "ёб твою мать",
-    "strength": 3,
-    "damage": 50,
-    "blockRisk": 0.5
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "жопа",
+    "damage": 20,
+    "block_risk": 0.2
   },
   {
     "word": "жополиз",
-    "strength": 3,
-    "damage": 41,
-    "blockRisk": 0.5
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "играть на кожаной флейте",
-    "strength": 3,
-    "damage": 35,
-    "blockRisk": 0.5
+    "damage": 20,
+    "block_risk": 0.2
   },
   {
     "word": "измудохать",
-    "strength": 3,
-    "damage": 43,
-    "blockRisk": 0.5
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "каждый дрочит как он хочет",
-    "strength": 3,
-    "damage": 47,
-    "blockRisk": 0.5
+    "damage": 20,
+    "block_risk": 0.2
   },
   {
     "word": "какая разница",
-    "strength": 3,
-    "damage": 36,
-    "blockRisk": 0.5
+    "damage": 30,
+    "block_risk": 0.30000000000000004
   },
   {
     "word": "как два пальца обоссать",
-    "strength": 3,
-    "damage": 40,
-    "blockRisk": 0.5
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "курите мою трубку",
-    "strength": 3,
-    "damage": 36,
-    "blockRisk": 0.5
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "лысого в кулаке гонять",
-    "strength": 3,
-    "damage": 39,
-    "blockRisk": 0.5
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "малофья",
-    "strength": 3,
-    "damage": 37,
-    "blockRisk": 0.5
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "манда",
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "мандавошка",
-    "strength": 3,
-    "damage": 30,
-    "blockRisk": 0.5
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "мент",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "муда",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "мудило",
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "мудозвон",
-    "strength": 3,
-    "damage": 48,
-    "blockRisk": 0.5
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "наебать",
-    "strength": 3,
-    "damage": 38,
-    "blockRisk": 0.5
+    "damage": 20,
+    "block_risk": 0.2
   },
   {
     "word": "наебениться",
-    "strength": 3,
-    "damage": 33,
-    "blockRisk": 0.5
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "наебнуться",
-    "strength": 3,
-    "damage": 35,
-    "blockRisk": 0.5
+    "damage": 30,
+    "block_risk": 0.30000000000000004
+  },
+  {
+    "word": "на фиг",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "на хуй",
+    "damage": 20,
+    "block_risk": 0.2
   },
   {
     "word": "на хую вертеть",
-    "strength": 3,
-    "damage": 43,
-    "blockRisk": 0.5
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "на хуя",
+    "damage": 20,
+    "block_risk": 0.2
   },
   {
     "word": "нахуячиться",
-    "strength": 3,
-    "damage": 50,
-    "blockRisk": 0.5
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "невебенный",
-    "strength": 3,
-    "damage": 33,
-    "blockRisk": 0.5
+    "damage": 20,
+    "block_risk": 0.2
   },
   {
     "word": "не ебет",
-    "strength": 3,
-    "damage": 31,
-    "blockRisk": 0.5
+    "damage": 30,
+    "block_risk": 0.30000000000000004
   },
   {
     "word": "ни за хуй собачу",
-    "strength": 3,
-    "damage": 39,
-    "blockRisk": 0.5
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "ни хуя",
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "обнаженный",
-    "strength": 3,
-    "damage": 48,
-    "blockRisk": 0.5
+    "damage": 20,
+    "block_risk": 0.2
   },
   {
     "word": "обоссаться можно",
-    "strength": 3,
-    "damage": 42,
-    "blockRisk": 0.5
+    "damage": 20,
+    "block_risk": 0.2
   },
   {
     "word": "один ебётся",
-    "strength": 3,
-    "damage": 43,
-    "blockRisk": 0.5
+    "damage": 30,
+    "block_risk": 0.30000000000000004
   },
   {
     "word": "опесдол",
-    "strength": 3,
-    "damage": 42,
-    "blockRisk": 0.5
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "офигеть",
-    "strength": 3,
-    "damage": 33,
-    "blockRisk": 0.5
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "охуеть",
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "охуительно",
-    "strength": 3,
-    "damage": 41,
-    "blockRisk": 0.5
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "половое сношение",
-    "strength": 3,
-    "damage": 42,
-    "blockRisk": 0.5
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "секс",
+    "damage": 30,
+    "block_risk": 0.30000000000000004
+  },
+  {
+    "word": "сиськи",
+    "damage": 20,
+    "block_risk": 0.2
   },
   {
     "word": "спиздить",
-    "strength": 3,
-    "damage": 43,
-    "blockRisk": 0.5
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "срать",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "ссать",
+    "damage": 30,
+    "block_risk": 0.30000000000000004
   },
   {
     "word": "траxать",
-    "strength": 3,
-    "damage": 43,
-    "blockRisk": 0.5
+    "damage": 20,
+    "block_risk": 0.2
   },
   {
     "word": "ты мне ваньку не валяй",
-    "strength": 3,
-    "damage": 30,
-    "blockRisk": 0.5
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "фига",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "хапать",
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "хер с ней",
-    "strength": 3,
-    "damage": 50,
-    "blockRisk": 0.5
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "хер с ним",
-    "strength": 3,
-    "damage": 34,
-    "blockRisk": 0.5
+    "damage": 30,
+    "block_risk": 0.30000000000000004
+  },
+  {
+    "word": "хохол",
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "хрен",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "хуёво",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "хуёвый",
+    "damage": 20,
+    "block_risk": 0.2
   },
   {
     "word": "хуем груши околачивать",
-    "strength": 3,
-    "damage": 32,
-    "blockRisk": 0.5
+    "damage": 20,
+    "block_risk": 0.2
   },
   {
     "word": "хуеплет",
-    "strength": 3,
-    "damage": 35,
-    "blockRisk": 0.5
+    "damage": 20,
+    "block_risk": 0.2
+  },
+  {
+    "word": "хуило",
+    "damage": 20,
+    "block_risk": 0.2
   },
   {
     "word": "хуиней страдать",
-    "strength": 3,
-    "damage": 36,
-    "blockRisk": 0.5
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "хуиня",
+    "damage": 10,
+    "block_risk": 0.1
+  },
+  {
+    "word": "хуй",
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "хуйнуть",
-    "strength": 3,
-    "damage": 44,
-    "blockRisk": 0.5
+    "damage": 10,
+    "block_risk": 0.1
   },
   {
     "word": "хуй пинать",
-    "strength": 3,
-    "damage": 36,
-    "blockRisk": 0.5
+    "damage": 20,
+    "block_risk": 0.2
   }
 ]
