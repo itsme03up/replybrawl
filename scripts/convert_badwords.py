@@ -1,73 +1,63 @@
 #!/usr/bin/env python3
-# convert_badwords.py
-# テキストファイルの悪口リストをJSONに変換し、強さレベルを付与するスクリプト
+# -*- coding: utf-8 -*-
+"""
+悪口リストをテキストファイルからJSONファイルに変換するスクリプト
+"""
 
 import json
 import os
-import random
 
-def convert_badwords_to_json(input_file, output_file):
+def convert_txt_to_json(txt_file_path, json_file_path):
     """
-    悪口テキストファイルをJSONに変換
-    各悪口に強さレベル（1-3）とダメージ値を付与
+    テキストファイルの悪口リストをJSONファイルに変換
+    各悪口にダメージレベル（1-3）をランダムに割り当て
     """
-    if not os.path.exists(input_file):
-        print(f"入力ファイルが見つかりません: {input_file}")
-        return
+    import random
     
     badwords = []
     
-    with open(input_file, 'r', encoding='utf-8') as f:
-        for line in f:
+    try:
+        with open(txt_file_path, 'r', encoding='utf-8') as f:
+            lines = f.readlines()
+            
+        for line in lines:
             word = line.strip()
             if word and not word.startswith('#'):  # 空行とコメント行をスキップ
-                # 文字数に基づいて強さを決定（適当な基準）
-                length = len(word)
-                if length <= 3:
-                    strength = 1
-                    damage = random.randint(10, 20)
-                    block_risk = 0.1
-                elif length <= 6:
-                    strength = 2
-                    damage = random.randint(20, 35)
-                    block_risk = 0.3
-                else:
-                    strength = 3
-                    damage = random.randint(30, 50)
-                    block_risk = 0.5
+                # ダメージレベルを設定（1=軽い, 2=中程度, 3=重い）
+                damage_level = random.choice([1, 1, 1, 2, 2, 3])  # 軽いものを多めに
                 
                 badwords.append({
                     "word": word,
-                    "strength": strength,
-                    "damage": damage,
-                    "blockRisk": block_risk
+                    "damage": damage_level * 10,  # 10, 20, 30のダメージ
+                    "block_risk": damage_level * 0.1  # 0.1, 0.2, 0.3のブロック率
                 })
-    
-    # 強さ別にソート
-    badwords.sort(key=lambda x: x['strength'])
-    
-    with open(output_file, 'w', encoding='utf-8') as f:
-        json.dump(badwords, f, ensure_ascii=False, indent=2)
-    
-    print(f"変換完了: {len(badwords)}個の悪口を {output_file} に保存しました")
-
-def main():
-    # 入力ファイルと出力ファイルのパス
-    src_dir = os.path.join(os.path.dirname(__file__), '..', 'src', 'data')
-    
-    # 日本語の悪口ファイルを変換
-    ja_input = os.path.join(src_dir, 'badwords_ja.txt')
-    ja_output = os.path.join(src_dir, 'badwords_ja.json')
-    
-    if os.path.exists(ja_input):
-        convert_badwords_to_json(ja_input, ja_output)
-    
-    # ロシア語の悪口ファイルも変換
-    ru_input = os.path.join(src_dir, 'badwords_ru.txt')
-    ru_output = os.path.join(src_dir, 'badwords_ru.json')
-    
-    if os.path.exists(ru_input):
-        convert_badwords_to_json(ru_input, ru_output)
+        
+        # JSONファイルに保存
+        with open(json_file_path, 'w', encoding='utf-8') as f:
+            json.dump(badwords, f, ensure_ascii=False, indent=2)
+            
+        print(f"✅ 変換完了: {txt_file_path} → {json_file_path}")
+        print(f"   悪口数: {len(badwords)}個")
+        
+    except Exception as e:
+        print(f"❌ エラー: {e}")
 
 if __name__ == "__main__":
-    main()
+    # 日本語の悪口リストを変換
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    src_dir = os.path.join(script_dir, "..", "src", "data")
+    
+    txt_file = os.path.join(src_dir, "badwords_ja.txt")
+    json_file = os.path.join(src_dir, "badwords_ja.json")
+    
+    if os.path.exists(txt_file):
+        convert_txt_to_json(txt_file, json_file)
+    else:
+        print(f"❌ ファイルが見つかりません: {txt_file}")
+        
+    # ロシア語版も処理（存在する場合）
+    txt_file_ru = os.path.join(src_dir, "badwords_ru.txt")
+    json_file_ru = os.path.join(src_dir, "badwords_ru.json")
+    
+    if os.path.exists(txt_file_ru):
+        convert_txt_to_json(txt_file_ru, json_file_ru)
