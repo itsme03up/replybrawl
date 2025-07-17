@@ -7,6 +7,10 @@ import GaugeBar from './components/GaugeBar';
 import LanguageSwitcher from './components/LanguageSwitcher';
 import { GameState } from './utils/gameLogic';
 import { getRandomBadwords } from './utils/wordUtils';
+            </p>
+          </div>
+        )}';
+import { getRandomBadwords } from './utils/wordUtils';
 
 function App() {
   const [gameState] = useState(() => new GameState());
@@ -228,29 +232,29 @@ function App() {
   return (
     <div className="min-h-screen bg-black text-white overflow-x-hidden">
       {/* ヘッダー */}
-      <header className="bg-gray-900 border-b border-gray-700 p-2 sm:p-4">
-        <div className="max-w-6xl mx-auto flex items-center justify-between flex-wrap gap-2">
-          <h1 className="text-lg sm:text-2xl font-bold text-blue-400">ReplyBrawl 🎤💥</h1>
-          <div className="flex items-center gap-2 sm:gap-4 flex-wrap">
+      <header className="bg-gray-900 border-b border-gray-700 p-1 sm:p-2">
+        <div className="max-w-6xl mx-auto flex items-center justify-between flex-wrap gap-1 sm:gap-2">
+          <h1 className="text-base sm:text-xl font-bold text-blue-400">ReplyBrawl 🎤💥</h1>
+          <div className="flex items-center gap-1 sm:gap-2 flex-wrap">
             <LanguageSwitcher 
               currentLanguage={currentLanguage}
               onLanguageChange={handleLanguageChange}
             />
             <button
               onClick={toggleDifficulty}
-              className={`px-2 sm:px-4 py-2 rounded-lg transition-colors font-medium text-sm sm:text-base ${
+              className={`px-1 sm:px-2 py-1 rounded text-xs sm:text-sm transition-colors font-medium ${
                 isEasyMode 
                   ? 'bg-green-600 hover:bg-green-500 text-white' 
                   : 'bg-red-600 hover:bg-red-500 text-white'
               }`}
             >
               {isEasyMode 
-                ? getText('🎯 イージー', '🎯 Лёгкий') 
-                : getText('🔥 ノーマル', '🔥 Нормальный')}
+                ? getText('🎯 Easy', '🎯 Лёг') 
+                : getText('🔥 Normal', '🔥 Норм')}
             </button>
             <button
               onClick={resetGame}
-              className="bg-gray-700 hover:bg-gray-600 text-white px-2 sm:px-4 py-2 rounded-lg transition-colors text-sm sm:text-base"
+              className="bg-gray-700 hover:bg-gray-600 text-white px-1 sm:px-2 py-1 rounded text-xs sm:text-sm transition-colors"
             >
               {getText('リセット', 'Сброс')}
             </button>
@@ -258,11 +262,11 @@ function App() {
         </div>
       </header>
 
-      <div className="max-w-6xl mx-auto p-2 sm:p-4 space-y-4 sm:space-y-6">
+      <div className="max-w-6xl mx-auto p-1 sm:p-2 space-y-2 sm:space-y-3">
         {/* ゲージエリア */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 sm:gap-6">
-          <div className="bg-gray-900 rounded-lg p-3 sm:p-4">
-            <h3 className="text-base sm:text-lg font-bold mb-2 sm:mb-3 text-blue-400">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 sm:gap-3">
+          <div className="bg-gray-900 rounded-lg p-2 sm:p-3">
+            <h3 className="text-sm sm:text-base font-bold mb-1 sm:mb-2 text-blue-400">
               {getText('あなたのメンタル', 'Ваша психика')}
             </h3>
             <GaugeBar 
@@ -273,8 +277,8 @@ function App() {
             />
           </div>
           
-          <div className="bg-gray-900 rounded-lg p-3 sm:p-4">
-            <h3 className="text-base sm:text-lg font-bold mb-2 sm:mb-3 text-red-400">
+          <div className="bg-gray-900 rounded-lg p-2 sm:p-3">
+            <h3 className="text-sm sm:text-base font-bold mb-1 sm:mb-2 text-red-400">
               {getText('相手のメンタル', 'Психика соперника')}
             </h3>
             <GaugeBar 
@@ -286,8 +290,8 @@ function App() {
         </div>
 
         {/* ブロック率ゲージ */}
-        <div className="bg-gray-900 rounded-lg p-3 sm:p-4">
-          <h3 className="text-base sm:text-lg font-bold mb-2 sm:mb-3 text-yellow-400">
+        <div className="bg-gray-900 rounded-lg p-2 sm:p-3">
+          <h3 className="text-sm sm:text-base font-bold mb-1 sm:mb-2 text-yellow-400">
             {getText('ブロック危険度', 'Риск блокировки')}
           </h3>
           <GaugeBar 
