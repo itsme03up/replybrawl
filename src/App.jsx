@@ -1,10 +1,10 @@
-// App.jsx
 // ゲームのメインコンポーネント
 
 import React, { useState, useEffect } from 'react';
 import TweetCard from './components/TweetCard';
 import ReplyOption from './components/ReplyOption';
 import GaugeBar from './components/GaugeBar';
+import LanguageSwitcher from './components/LanguageSwitcher';
 import { GameState } from './utils/gameLogic';
 import { getRandomBadwords } from './utils/wordUtils';
 
@@ -14,15 +14,23 @@ function App() {
   const [badwordOptions, setBadwordOptions] = useState([]);
   const [message, setMessage] = useState('');
   const [isProcessing, setIsProcessing] = useState(false);
+  const [currentLanguage, setCurrentLanguage] = useState('ja');
 
   // ゲーム開始時に悪口オプションを生成
   useEffect(() => {
     generateNewOptions();
-  }, []);
+  }, [currentLanguage]);
 
   const generateNewOptions = () => {
-    const newOptions = getRandomBadwords();
+    const newOptions = getRandomBadwords(currentLanguage);
     setBadwordOptions(newOptions);
+  };
+
+  const handleLanguageChange = (language) => {
+    setCurrentLanguage(language);
+    gameState.setLanguage(language);
+    // 言語が変わったら新しい選択肢を生成
+    setTimeout(() => generateNewOptions(), 100);
   };
 
   const handleBadwordSelect = async (selectedBadword) => {
@@ -57,6 +65,11 @@ function App() {
     setIsProcessing(false);
   };
 
+  // 言語に応じたテキストを取得
+  const getText = (jaText, ruText) => {
+    return currentLanguage === 'ja' ? jaText : ruText;
+  };
+
   const GameOverScreen = () => (
     <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50">
       <div className="bg-gray-800 rounded-lg p-8 max-w-md w-full mx-4 text-center">
@@ -64,18 +77,20 @@ function App() {
           {currentState.winner === 'player' ? '🎉' : '😵'}
         </div>
         <h2 className="text-2xl font-bold text-white mb-4">
-          {currentState.winner === 'player' ? '勝利！' : 'ゲームオーバー'}
+          {currentState.winner === 'player' 
+            ? getText('勝利！', 'Победа!') 
+            : getText('ゲームオーバー', 'Игра окончена')}
         </h2>
         <p className="text-gray-300 mb-6">
           {currentState.winner === 'player' 
-            ? '相手のメンタルを完全に破壊しました！' 
-            : 'ブロックされてしまいました...'}
+            ? getText('相手のメンタルを完全に破壊しました！', 'Вы полностью сломали психику соперника!') 
+            : getText('ブロックされてしまいました...', 'Вас заблокировали...')}
         </p>
         <button
           onClick={resetGame}
           className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-lg transition-colors"
         >
-          もう一度プレイ
+          {getText('もう一度プレイ', 'Играть снова')}
         </button>
       </div>
     </div>
@@ -87,12 +102,18 @@ function App() {
       <header className="bg-gray-900 border-b border-gray-700 p-4">
         <div className="max-w-4xl mx-auto flex items-center justify-between">
           <h1 className="text-2xl font-bold text-blue-400">ReplyBrawl 🎤💥</h1>
-          <button
-            onClick={resetGame}
-            className="bg-gray-700 hover:bg-gray-600 text-white px-4 py-2 rounded-lg transition-colors"
-          >
-            リセット
-          </button>
+          <div className="flex items-center gap-4">
+            <LanguageSwitcher 
+              currentLanguage={currentLanguage}
+              onLanguageChange={handleLanguageChange}
+            />
+            <button
+              onClick={resetGame}
+              className="bg-gray-700 hover:bg-gray-600 text-white px-4 py-2 rounded-lg transition-colors"
+            >
+              {getText('リセット', 'Сброс')}
+            </button>
+          </div>
         </div>
       </header>
 
@@ -100,7 +121,9 @@ function App() {
         {/* ゲージエリア */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
           <div className="bg-gray-900 rounded-lg p-4">
-            <h3 className="text-lg font-bold mb-3 text-blue-400">あなたのメンタル</h3>
+            <h3 className="text-lg font-bold mb-3 text-blue-400">
+              {getText('あなたのメンタル', 'Ваша психика')}
+            </h3>
             <GaugeBar 
               label="HP" 
               value={currentState.playerHp} 
@@ -109,7 +132,9 @@ function App() {
           </div>
           
           <div className="bg-gray-900 rounded-lg p-4">
-            <h3 className="text-lg font-bold mb-3 text-red-400">相手のメンタル</h3>
+            <h3 className="text-lg font-bold mb-3 text-red-400">
+              {getText('相手のメンタル', 'Психика соперника')}
+            </h3>
             <GaugeBar 
               label="HP" 
               value={currentState.npcHp} 
@@ -120,9 +145,11 @@ function App() {
 
         {/* ブロック率ゲージ */}
         <div className="bg-gray-900 rounded-lg p-4 mb-6">
-          <h3 className="text-lg font-bold mb-3 text-yellow-400">ブロック危険度</h3>
+          <h3 className="text-lg font-bold mb-3 text-yellow-400">
+            {getText('ブロック危険度', 'Риск блокировки')}
+          </h3>
           <GaugeBar 
-            label="ブロック率" 
+            label={getText('ブロック率', 'Риск блока')} 
             value={currentState.blockRisk * 100} 
             maxValue={100}
             type="block"
@@ -131,8 +158,8 @@ function App() {
 
         {/* 相手のツイート */}
         <TweetCard 
-          username="レスバ太郎"
-          handle="@resbatarou"
+          username={getText('レスバ太郎', 'Спорщик Петя')}
+          handle={getText('@resbatarou', '@sporshchik_petya')}
           text={currentState.npcReaction}
         />
 
@@ -146,7 +173,9 @@ function App() {
         {/* 返信オプション */}
         <div className="bg-gray-900 rounded-lg p-6">
           <h3 className="text-xl font-bold mb-4 text-center">
-            {isProcessing ? '処理中...' : '返信を選択してください'}
+            {isProcessing 
+              ? getText('処理中...', 'Обработка...') 
+              : getText('返信を選択してください', 'Выберите ответ')}
           </h3>
           
           <div className="space-y-4">
@@ -162,12 +191,25 @@ function App() {
 
           {/* ゲーム説明 */}
           <div className="mt-6 p-4 bg-gray-800 rounded-lg">
-            <h4 className="font-bold text-sm text-gray-300 mb-2">🎮 ゲームルール</h4>
+            <h4 className="font-bold text-sm text-gray-300 mb-2">
+              🎮 {getText('ゲームルール', 'Правила игры')}
+            </h4>
             <ul className="text-xs text-gray-400 space-y-1">
-              <li>• 相手のメンタルHPを0にすれば勝利！</li>
-              <li>• 強い悪口ほどダメージが大きいが、ブロック率も上がる</li>
-              <li>• ブロックされたら即ゲームオーバー</li>
-              <li>• バランスを考えて攻撃しよう！</li>
+              {currentLanguage === 'ja' ? (
+                <>
+                  <li>• 相手のメンタルHPを0にすれば勝利！</li>
+                  <li>• 強い悪口ほどダメージが大きいが、ブロック率も上がる</li>
+                  <li>• ブロックされたら即ゲームオーバー</li>
+                  <li>• バランスを考えて攻撃しよう！</li>
+                </>
+              ) : (
+                <>
+                  <li>• Нанесите сопернику урон до 0 ментального HP, чтобы выиграть!</li>
+                  <li>• Чем сильнее оскорбление, тем больше урон, но и риск блокировки выше</li>
+                  <li>• Если вас заблокировали, игра окончена</li>
+                  <li>• Атакуйте, учитывая баланс!</li>
+                </>
+              )}
             </ul>
           </div>
         </div>

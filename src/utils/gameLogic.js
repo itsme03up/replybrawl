@@ -7,8 +7,8 @@ import { calculateDamage, calculateBlockRisk, getNpcReaction } from './wordUtils
  * ゲーム状態を管理するクラス
  */
 export class GameState {
-  constructor(language = 'ja') {
-    this.language = language;
+  constructor() {
+    this.language = 'ja';
     this.playerHp = 100;
     this.npcHp = 100;
     this.blockRisk = 0;
