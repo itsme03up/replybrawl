@@ -9,6 +9,7 @@ import { calculateDamage, calculateBlockRisk, getNpcReaction, calculateNpcCounte
 export class GameState {
   constructor() {
     this.language = 'ja';
+    this.isEasyMode = false;
     this.playerHp = 100;
     this.npcHp = 100;
     this.blockRisk = 0;
@@ -38,6 +39,14 @@ export class GameState {
     if (!this.gameOver) {
       this.npcReaction = this.getInitialMessage();
     }
+  }
+
+  /**
+   * 難易度を設定
+   * @param {boolean} isEasyMode - イージーモードかどうか
+   */
+  setDifficulty(isEasyMode) {
+    this.isEasyMode = isEasyMode;
   }
 
   /**
@@ -172,9 +181,11 @@ export class GameState {
 
   /**
    * ゲームをリセット
+   * @param {boolean} isEasyMode - イージーモードかどうか
    */
-  reset() {
-    this.playerHp = 100;
+  reset(isEasyMode = false) {
+    this.isEasyMode = isEasyMode;
+    this.playerHp = isEasyMode ? 120 : 100;
     this.npcHp = 100;
     this.blockRisk = 0;
     this.gameOver = false;

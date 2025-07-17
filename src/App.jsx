@@ -14,6 +14,7 @@ function App() {
   const [badwordOptions, setBadwordOptions] = useState([]);
   const [message, setMessage] = useState('');
   const [counterMessage, setCounterMessage] = useState('');
+  const [isEasyMode, setIsEasyMode] = useState(false);
   const [isProcessing, setIsProcessing] = useState(false);
   const [currentLanguage, setCurrentLanguage] = useState('ja');
 
@@ -70,12 +71,19 @@ function App() {
   };
 
   const resetGame = () => {
-    gameState.reset();
+    gameState.reset(isEasyMode);
     setCurrentState(gameState.getState());
     setMessage('');
     setCounterMessage('');
     generateNewOptions(currentLanguage);
     setIsProcessing(false);
+  };
+
+  const toggleDifficulty = () => {
+    const newEasyMode = !isEasyMode;
+    setIsEasyMode(newEasyMode);
+    gameState.setDifficulty(newEasyMode);
+    resetGame();
   };
 
   // 言語に応じたテキストを取得
@@ -228,6 +236,18 @@ function App() {
               onLanguageChange={handleLanguageChange}
             />
             <button
+              onClick={toggleDifficulty}
+              className={`px-4 py-2 rounded-lg transition-colors font-medium ${
+                isEasyMode 
+                  ? 'bg-green-600 hover:bg-green-500 text-white' 
+                  : 'bg-red-600 hover:bg-red-500 text-white'
+              }`}
+            >
+              {isEasyMode 
+                ? getText('🎯 イージー', '🎯 Лёгкий') 
+                : getText('🔥 ノーマル', '🔥 Нормальный')}
+            </button>
+            <button
               onClick={resetGame}
               className="bg-gray-700 hover:bg-gray-600 text-white px-4 py-2 rounded-lg transition-colors"
             >
@@ -247,6 +267,7 @@ function App() {
             <GaugeBar 
               label="HP" 
               value={currentState.playerHp} 
+              maxValue={isEasyMode ? 120 : 100}
               type="hp"
             />
           </div>
@@ -328,6 +349,9 @@ function App() {
               {currentLanguage === 'ja' ? (
                 <>
                   <li>• 相手のメンタルHPを0にすれば勝利！</li>
+                  {isEasyMode && (
+                    <li>• <span className="text-green-400 font-bold">🎯 EASY MODE!</span> あなたのHP120、攻撃力+30%、ブロック率-50%</li>
+                  )}
                   <li>• <span className="text-red-400 font-bold">⚡ NEW!</span> 相手も反撃してくる！あなたのHPも減る</li>
                   <li>• 強い悪口ほどダメージが大きいが、ブロック率も上がる</li>
                   <li>• ブロックされたら即ゲームオーバー</li>
@@ -337,6 +361,9 @@ function App() {
               ) : (
                 <>
                   <li>• Нанесите сопернику урон до 0 ментального HP, чтобы выиграть!</li>
+                  {isEasyMode && (
+                    <li>• <span className="text-green-400 font-bold">🎯 EASY MODE!</span> Ваш HP 120, атака +30%, риск блока -50%</li>
+                  )}
                   <li>• <span className="text-red-400 font-bold">⚡ NEW!</span> Соперник тоже атакует в ответ! Ваш HP тоже уменьшается</li>
                   <li>• Чем сильнее оскорбление, тем больше урон, но и риск блокировки выше</li>
                   <li>• Если вас заблокировали, игра окончена</li>
