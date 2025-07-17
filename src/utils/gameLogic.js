@@ -55,8 +55,11 @@ export class GameState {
    * @returns {Object} 更新結果
    */
   processPlayerAttack(selectedBadword) {
-    const damage = calculateDamage(selectedBadword);
-    const blockRisk = calculateBlockRisk(selectedBadword);
+    const baseDamage = calculateDamage(selectedBadword);
+    const damage = this.isEasyMode ? Math.floor(baseDamage * 1.3) : baseDamage;
+    
+    const baseBlockRisk = calculateBlockRisk(selectedBadword);
+    const blockRisk = this.isEasyMode ? baseBlockRisk * 0.5 : baseBlockRisk;
     
     // ブロックされるかの判定
     const isBlocked = Math.random() < (this.blockRisk + blockRisk);
@@ -95,7 +98,8 @@ export class GameState {
     let npcCounterText = '';
     
     if (this.npcHp > 0) {
-      counterDamage = calculateNpcCounterDamage(this.npcHp, damage);
+      const baseCounterDamage = calculateNpcCounterDamage(this.npcHp, damage);
+      counterDamage = this.isEasyMode ? Math.floor(baseCounterDamage * 0.6) : baseCounterDamage;
       this.playerHp = Math.max(0, this.playerHp - counterDamage);
       npcCounterText = getNpcCounterAttack(this.npcHp, counterDamage, this.language);
       

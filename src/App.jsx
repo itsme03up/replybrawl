@@ -20,8 +20,9 @@ function App() {
 
   // ゲーム開始時に悪口オプションを生成
   useEffect(() => {
+    gameState.setDifficulty(isEasyMode);
     generateNewOptions(currentLanguage);
-  }, [currentLanguage]);
+  }, [currentLanguage, isEasyMode]);
 
   const generateNewOptions = (language = currentLanguage) => {
     const newOptions = getRandomBadwords(language);

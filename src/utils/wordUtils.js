@@ -36,25 +36,21 @@ export function getAvailableLanguages() {
 }
 
 /**
- * 悪口の強さに基づいてダメージを計算（プレイヤー有利設定）
+ * 悪口の強さに基づいてダメージを計算
  * @param {Object} badword - 悪口オブジェクト
  * @returns {number} ダメージ値
  */
 export function calculateDamage(badword) {
-  // プレイヤーのダメージを1.3倍に増加
-  const baseDamage = badword.damage || 10;
-  return Math.floor(baseDamage * 1.3);
+  return badword.damage || 10;
 }
 
 /**
- * 悪口の強さに基づいてブロック確率を計算（優しい設定）
+ * 悪口の強さに基づいてブロック確率を計算
  * @param {Object} badword - 悪口オブジェクト
  * @returns {number} ブロック確率（0.0-1.0）
  */
 export function calculateBlockRisk(badword) {
-  // ブロックリスクを半分に削減してプレイヤーに有利に
-  const originalRisk = badword.block_risk || 0.1;
-  return originalRisk * 0.5; // 50%削減
+  return badword.block_risk || 0.1;
 }
 
 /**
@@ -132,20 +128,20 @@ export function getNpcReaction(remainingHp, language = 'ja') {
 }
 
 /**
- * NPCがプレイヤーに対して反撃する際のダメージを計算（優しい設定）
+ * NPCがプレイヤーに対して反撃する際のダメージを計算
  * @param {number} npcHp - NPCの残りHP
  * @param {number} playerAttackDamage - プレイヤーが与えたダメージ
  * @returns {number} NPCの反撃ダメージ
  */
 export function calculateNpcCounterDamage(npcHp, playerAttackDamage) {
-  // プレイヤーに有利になるよう反撃ダメージを大幅に削減
+  // NPCのHPが低いほど、また受けたダメージが大きいほど反撃が強くなる
   const desperation = (100 - npcHp) / 100; // 0.0 - 1.0の絶望度
-  const reactionStrength = playerAttackDamage / 50; // 反応を弱く（30→50）
+  const reactionStrength = playerAttackDamage / 30; // 受けたダメージに対する反応
   
-  // 基本ダメージを大幅削減 + 絶望ボーナスとリアクションボーナスも削減
-  const baseDamage = 3 + Math.random() * 4; // 3-7のベースダメージ（8-15→3-7）
-  const desperationBonus = desperation * 4; // 最大4の絶望ボーナス（10→4）
-  const reactionBonus = reactionStrength * 2; // 最大2の反応ボーナス（5→2）
+  // 基本ダメージ + 絶望ボーナス + 反応ボーナス
+  const baseDamage = 8 + Math.random() * 7; // 8-15のベースダメージ
+  const desperationBonus = desperation * 10; // 最大10の絶望ボーナス
+  const reactionBonus = reactionStrength * 5; // 最大5の反応ボーナス
   
   return Math.floor(baseDamage + desperationBonus + reactionBonus);
 }
