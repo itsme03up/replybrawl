@@ -226,19 +226,19 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen bg-black text-white overflow-x-hidden">
       {/* ヘッダー */}
-      <header className="bg-gray-900 border-b border-gray-700 p-4">
-        <div className="max-w-4xl mx-auto flex items-center justify-between">
-          <h1 className="text-2xl font-bold text-blue-400">ReplyBrawl 🎤💥</h1>
-          <div className="flex items-center gap-4">
+      <header className="bg-gray-900 border-b border-gray-700 p-2 sm:p-4">
+        <div className="max-w-6xl mx-auto flex items-center justify-between flex-wrap gap-2">
+          <h1 className="text-lg sm:text-2xl font-bold text-blue-400">ReplyBrawl 🎤💥</h1>
+          <div className="flex items-center gap-2 sm:gap-4 flex-wrap">
             <LanguageSwitcher 
               currentLanguage={currentLanguage}
               onLanguageChange={handleLanguageChange}
             />
             <button
               onClick={toggleDifficulty}
-              className={`px-4 py-2 rounded-lg transition-colors font-medium ${
+              className={`px-2 sm:px-4 py-2 rounded-lg transition-colors font-medium text-sm sm:text-base ${
                 isEasyMode 
                   ? 'bg-green-600 hover:bg-green-500 text-white' 
                   : 'bg-red-600 hover:bg-red-500 text-white'
@@ -250,7 +250,7 @@ function App() {
             </button>
             <button
               onClick={resetGame}
-              className="bg-gray-700 hover:bg-gray-600 text-white px-4 py-2 rounded-lg transition-colors"
+              className="bg-gray-700 hover:bg-gray-600 text-white px-2 sm:px-4 py-2 rounded-lg transition-colors text-sm sm:text-base"
             >
               {getText('リセット', 'Сброс')}
             </button>
@@ -258,11 +258,11 @@ function App() {
         </div>
       </header>
 
-      <div className="max-w-4xl mx-auto p-4">
+      <div className="max-w-6xl mx-auto p-2 sm:p-4 space-y-4 sm:space-y-6">
         {/* ゲージエリア */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-          <div className="bg-gray-900 rounded-lg p-4">
-            <h3 className="text-lg font-bold mb-3 text-blue-400">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 sm:gap-6">
+          <div className="bg-gray-900 rounded-lg p-3 sm:p-4">
+            <h3 className="text-base sm:text-lg font-bold mb-2 sm:mb-3 text-blue-400">
               {getText('あなたのメンタル', 'Ваша психика')}
             </h3>
             <GaugeBar 
@@ -273,8 +273,8 @@ function App() {
             />
           </div>
           
-          <div className="bg-gray-900 rounded-lg p-4">
-            <h3 className="text-lg font-bold mb-3 text-red-400">
+          <div className="bg-gray-900 rounded-lg p-3 sm:p-4">
+            <h3 className="text-base sm:text-lg font-bold mb-2 sm:mb-3 text-red-400">
               {getText('相手のメンタル', 'Психика соперника')}
             </h3>
             <GaugeBar 
@@ -286,8 +286,8 @@ function App() {
         </div>
 
         {/* ブロック率ゲージ */}
-        <div className="bg-gray-900 rounded-lg p-4 mb-6">
-          <h3 className="text-lg font-bold mb-3 text-yellow-400">
+        <div className="bg-gray-900 rounded-lg p-3 sm:p-4">
+          <h3 className="text-base sm:text-lg font-bold mb-2 sm:mb-3 text-yellow-400">
             {getText('ブロック危険度', 'Риск блокировки')}
           </h3>
           <GaugeBar 
@@ -307,15 +307,15 @@ function App() {
 
         {/* メッセージエリア */}
         {message && (
-          <div className="bg-blue-900 border border-blue-700 rounded-lg p-4 mb-4 text-center">
-            <p className="text-blue-200 font-medium">{message}</p>
+          <div className="bg-blue-900 border border-blue-700 rounded-lg p-3 sm:p-4 text-center">
+            <p className="text-blue-200 font-medium text-sm sm:text-base">{message}</p>
           </div>
         )}
 
         {/* 反撃メッセージエリア */}
         {counterMessage && (
-          <div className="bg-red-900 border border-red-700 rounded-lg p-4 mb-4 text-center animate-pulse">
-            <p className="text-red-200 font-medium">
+          <div className="bg-red-900 border border-red-700 rounded-lg p-3 sm:p-4 text-center animate-pulse">
+            <p className="text-red-200 font-medium text-sm sm:text-base">
               <span className="text-red-300 font-bold">⚡ {getText('反撃', 'Контратака')}！ </span>
               {counterMessage}
             </p>
@@ -323,14 +323,14 @@ function App() {
         )}
 
         {/* 返信オプション */}
-        <div className="bg-gray-900 rounded-lg p-6">
-          <h3 className="text-xl font-bold mb-4 text-center">
+        <div className="bg-gray-900 rounded-lg p-4 sm:p-6">
+          <h3 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4 text-center">
             {isProcessing 
               ? getText('処理中...', 'Обработка...') 
               : getText('返信を選択してください', 'Выберите ответ')}
           </h3>
           
-          <div className="space-y-4">
+          <div className="space-y-3 sm:space-y-4">
             {badwordOptions.map((badword, index) => (
               <ReplyOption
                 key={`${badword.word}-${index}`}
@@ -342,7 +342,7 @@ function App() {
           </div>
 
           {/* ゲーム説明 */}
-          <div className="mt-6 p-4 bg-gray-800 rounded-lg">
+          <div className="mt-4 sm:mt-6 p-3 sm:p-4 bg-gray-800 rounded-lg">
             <h4 className="font-bold text-sm text-gray-300 mb-2">
               🎮 {getText('ゲームルール', 'Правила игры')}
             </h4>
