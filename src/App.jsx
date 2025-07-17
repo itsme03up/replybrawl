@@ -18,19 +18,21 @@ function App() {
 
   // ゲーム開始時に悪口オプションを生成
   useEffect(() => {
-    generateNewOptions();
+    generateNewOptions(currentLanguage);
   }, [currentLanguage]);
 
-  const generateNewOptions = () => {
-    const newOptions = getRandomBadwords(currentLanguage);
+  const generateNewOptions = (language = currentLanguage) => {
+    const newOptions = getRandomBadwords(language);
     setBadwordOptions(newOptions);
   };
 
   const handleLanguageChange = (language) => {
     setCurrentLanguage(language);
     gameState.setLanguage(language);
-    // 言語が変わったら新しい選択肢を生成
-    setTimeout(() => generateNewOptions(), 100);
+    // 言語が変わったら新しい選択肢を生成（新しい言語を直接渡す）
+    setTimeout(() => {
+      generateNewOptions(language);
+    }, 100);
   };
 
   const handleBadwordSelect = async (selectedBadword) => {
@@ -49,7 +51,7 @@ function App() {
     // ゲームが終了していない場合、新しい選択肢を生成
     if (!result.gameOver) {
       setTimeout(() => {
-        generateNewOptions();
+        generateNewOptions(currentLanguage);
         setIsProcessing(false);
       }, 2000);
     } else {
@@ -61,7 +63,7 @@ function App() {
     gameState.reset();
     setCurrentState(gameState.getState());
     setMessage('');
-    generateNewOptions();
+    generateNewOptions(currentLanguage);
     setIsProcessing(false);
   };
 

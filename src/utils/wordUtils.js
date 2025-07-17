@@ -16,6 +16,7 @@ const languages = {
  * @returns {Array} 3つの悪口オブジェクトの配列
  */
 export function getRandomBadwords(language = 'ja') {
+  console.log('getRandomBadwords called with language:', language);
   const languageData = languages[language];
   if (!languageData) {
     console.warn(`Unsupported language: ${language}, falling back to Japanese`);
@@ -23,8 +24,11 @@ export function getRandomBadwords(language = 'ja') {
   }
   
   const data = languages[language].data;
+  console.log('Using data for language:', language, 'data length:', data?.length);
   const shuffled = [...data].sort(() => 0.5 - Math.random());
-  return shuffled.slice(0, 3);
+  const result = shuffled.slice(0, 3);
+  console.log('Returning badwords:', result);
+  return result;
 }
 
 /**
