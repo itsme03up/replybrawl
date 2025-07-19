@@ -1,386 +1,385 @@
+// ゲームのメインコンポーネント
+
 import React, { useState, useEffect } from 'react';
 import TweetCard from './components/TweetCard';
 import ReplyOption from './components/ReplyOption';
 import GaugeBar from './components/GaugeBar';
 import LanguageSwitcher from './components/LanguageSwitcher';
-import { generateTweet, generateReplyOptions } from './utils/gameLogic';
-import { calculateDamage, getRandomBadword, getRandomTweet } from './utils/wordUtils';
-
-// Confetti component for victory animation
-const Confetti = () => {
-  const confettiPieces = Array.from({ length: 50 }, (_, i) => (
-    <div
-      key={i}
-      className="absolute w-2 h-2 bg-gradient-to-r from-yellow-400 to-red-500 animate-bounce"
-      style={{
-        left: `${Math.random() * 100}%`,
-        animationDelay: `${Math.random() * 2}s`,
-        animationDuration: `${1 + Math.random()}s`
-      }}
-    />
-  ));
-  
-  return (
-    <div className="fixed inset-0 pointer-events-none z-50 overflow-hidden">
-      {confettiPieces}
-    </div>
-  );
-};
+import { GameState } from './utils/gameLogic';
+import { getRandomBadwords } from './utils/wordUtils';
 
 function App() {
-  const [language, setLanguage] = useState('ja');
-  const [difficulty, setDifficulty] = useState('Normal');
-  const [gameState, setGameState] = useState('menu'); // 'menu', 'playing', 'gameOver', 'victory'
-  const [currentTweet, setCurrentTweet] = useState('');
-  const [replyOptions, setReplyOptions] = useState([]);
-  const [playerHP, setPlayerHP] = useState(100);
-  const [enemyHP, setEnemyHP] = useState(100);
-  const [gameStats, setGameStats] = useState({
-    totalDamageDealt: 0,
-    totalDamageReceived: 0,
-    successfulReplies: 0,
-    blockedAttacks: 0
-  });
-  const [lastAction, setLastAction] = useState(null);
-  const [showConfetti, setShowConfetti] = useState(false);
+  const [gameState] = useState(() => new GameState());
+  const [currentState, setCurrentState] = useState(gameState.getState());
+  const [badwordOptions, setBadwordOptions] = useState([]);
+  const [message, setMessage] = useState('');
+  const [counterMessage, setCounterMessage] = useState('');
+  const [isEasyMode, setIsEasyMode] = useState(false);
+  const [isProcessing, setIsProcessing] = useState(false);
+  const [currentLanguage, setCurrentLanguage] = useState('ja');
 
-  // Difficulty settings
-  const difficultySettings = {
-    Easy: {
-      playerHP: 150,
-      enemyHP: 80,
-      playerAttackMultiplier: 1.3,
-      enemyAttackMultiplier: 0.7,
-      playerBlockRate: 0.4,
-      enemyBlockRate: 0.2,
-      enemyCounterAttackRate: 0.2,
-      enemyCounterDamage: 8
-    },
-    Normal: {
-      playerHP: 100,
-      enemyHP: 100,
-      playerAttackMultiplier: 1.0,
-      enemyAttackMultiplier: 1.0,
-      playerBlockRate: 0.3,
-      enemyBlockRate: 0.3,
-      enemyCounterAttackRate: 0.3,
-      enemyCounterDamage: 12
-    }
+  // ゲーム開始時に悪口オプションを生成
+  useEffect(() => {
+    gameState.setDifficulty(isEasyMode);
+    generateNewOptions(currentLanguage);
+  }, [currentLanguage, isEasyMode]);
+
+  const generateNewOptions = (language = currentLanguage) => {
+    const newOptions = getRandomBadwords(language);
+    setBadwordOptions(newOptions);
   };
 
-  const currentSettings = difficultySettings[difficulty];
-
-  const maxPlayerHP = currentSettings.playerHP;
-  const maxEnemyHP = currentSettings.enemyHP;
-
-  const startGame = () => {
-    setPlayerHP(currentSettings.playerHP);
-    setEnemyHP(currentSettings.enemyHP);
-    setGameStats({
-      totalDamageDealt: 0,
-      totalDamageReceived: 0,
-      successfulReplies: 0,
-      blockedAttacks: 0
-    });
-    setLastAction(null);
-    setShowConfetti(false);
-    generateNewTweet();
-    setGameState('playing');
-  };
-
-  const generateNewTweet = () => {
-    const tweet = generateTweet(language);
-    const options = generateReplyOptions(language);
-    setCurrentTweet(tweet);
-    setReplyOptions(options);
-  };
-
-  const handleReplySelect = (selectedReply) => {
-    const damage = calculateDamage(selectedReply, currentSettings.playerAttackMultiplier);
-    
-    // Check if enemy blocks
-    const enemyBlocked = Math.random() < currentSettings.enemyBlockRate;
-    let actualDamage = enemyBlocked ? Math.floor(damage * 0.3) : damage;
-    
-    // Update enemy HP
-    const newEnemyHP = Math.max(0, enemyHP - actualDamage);
-    setEnemyHP(newEnemyHP);
-    
-    // Update stats
-    setGameStats(prev => ({
-      ...prev,
-      totalDamageDealt: prev.totalDamageDealt + actualDamage,
-      successfulReplies: prev.successfulReplies + 1,
-      blockedAttacks: enemyBlocked ? prev.blockedAttacks + 1 : prev.blockedAttacks
-    }));
-
-    let actionText = `あなたの攻撃: ${actualDamage}ダメージ`;
-    if (enemyBlocked) {
-      actionText += ' (ブロックされた!)';
-    }
-
-    // Check if enemy is defeated
-    if (newEnemyHP <= 0) {
-      setLastAction(actionText + '\n🎉 敵を倒した！');
-      setGameState('victory');
-      setShowConfetti(true);
-      return;
-    }
-
-    // Enemy counter-attack
-    let counterAttackText = '';
-    if (Math.random() < currentSettings.enemyCounterAttackRate) {
-      const counterDamage = currentSettings.enemyCounterDamage;
-      
-      // Check if player blocks counter-attack
-      const playerBlocked = Math.random() < currentSettings.playerBlockRate;
-      const actualCounterDamage = playerBlocked ? Math.floor(counterDamage * 0.3) : counterDamage;
-      
-      const newPlayerHP = Math.max(0, playerHP - actualCounterDamage);
-      setPlayerHP(newPlayerHP);
-      
-      counterAttackText = `\n敵の反撃: ${actualCounterDamage}ダメージ`;
-      if (playerBlocked) {
-        counterAttackText += ' (ブロックした!)';
-      }
-      
-      setGameStats(prev => ({
-        ...prev,
-        totalDamageReceived: prev.totalDamageReceived + actualCounterDamage
-      }));
-
-      // Check if player is defeated
-      if (newPlayerHP <= 0) {
-        setLastAction(actionText + counterAttackText + '\n💀 あなたの負け...');
-        setGameState('gameOver');
-        return;
-      }
-    }
-
-    setLastAction(actionText + counterAttackText);
-
-    // Generate new tweet after a short delay
+  const handleLanguageChange = (language) => {
+    setCurrentLanguage(language);
+    gameState.setLanguage(language);
+    // 言語が変わったら新しい選択肢を生成（新しい言語を直接渡す）
     setTimeout(() => {
-      generateNewTweet();
-    }, 1500);
+      generateNewOptions(language);
+    }, 100);
+  };
+
+  const handleBadwordSelect = async (selectedBadword) => {
+    if (isProcessing || currentState.gameOver) return;
+    
+    setIsProcessing(true);
+    setMessage('');
+    setCounterMessage('');
+
+    // 攻撃を処理
+    const result = gameState.processPlayerAttack(selectedBadword);
+    const newState = gameState.getState();
+    
+    setCurrentState(newState);
+    setMessage(result.message);
+    
+    // 反撃メッセージがある場合は遅延表示
+    if (result.counterMessage && !result.gameOver) {
+      setTimeout(() => {
+        setCounterMessage(result.counterMessage);
+      }, 1500);
+    }
+
+    // ゲームが終了していない場合、新しい選択肢を生成
+    if (!result.gameOver) {
+      setTimeout(() => {
+        generateNewOptions(currentLanguage);
+        setIsProcessing(false);
+        setCounterMessage('');
+      }, 3000);
+    } else {
+      setIsProcessing(false);
+    }
   };
 
   const resetGame = () => {
-    setGameState('menu');
-    setCurrentTweet('');
-    setReplyOptions([]);
-    setLastAction(null);
-    setShowConfetti(false);
+    gameState.reset(isEasyMode);
+    setCurrentState(gameState.getState());
+    setMessage('');
+    setCounterMessage('');
+    generateNewOptions(currentLanguage);
+    setIsProcessing(false);
   };
 
   const toggleDifficulty = () => {
-    setDifficulty(prev => prev === 'Easy' ? 'Normal' : 'Easy');
+    const newEasyMode = !isEasyMode;
+    setIsEasyMode(newEasyMode);
+    gameState.setDifficulty(newEasyMode);
+    resetGame();
   };
 
-  // Victory messages
-  const victoryMessages = [
-    '🎊 完璧な勝利です！',
-    '⚡ 素晴らしい戦いでした！',
-    '🏆 チャンピオンの誕生です！',
-    '🌟 見事な勝利を収めました！',
-    '🔥 圧倒的な強さでした！'
-  ];
+  // 言語に応じたテキストを取得
+  const getText = (jaText, ruText) => {
+    return currentLanguage === 'ja' ? jaText : ruText;
+  };
 
-  const randomVictoryMessage = victoryMessages[Math.floor(Math.random() * victoryMessages.length)];
-
-  if (gameState === 'menu') {
-    return (
-      <div className="min-h-screen bg-gradient-to-br from-blue-400 via-purple-500 to-pink-500 flex items-center justify-center p-2">
-        <div className="max-w-md w-full">
-          <div className="bg-white rounded-2xl shadow-2xl p-6 text-center transform hover:scale-105 transition-transform">
-            <h1 className="text-3xl font-bold text-gray-800 mb-2">ReplyBrawl</h1>
-            <p className="text-gray-600 mb-6 text-sm">最強のリプライで敵を倒せ！</p>
-            
-            <div className="mb-6">
-              <LanguageSwitcher language={language} setLanguage={setLanguage} />
-            </div>
-            
-            <div className="mb-6">
-              <div className="flex items-center justify-center gap-4 mb-2">
-                <span className="text-sm font-medium text-gray-700">難易度:</span>
-                <button
-                  onClick={toggleDifficulty}
-                  className={`px-4 py-2 rounded-full text-sm font-bold transition-all ${
-                    difficulty === 'Easy'
-                      ? 'bg-green-500 text-white shadow-lg'
-                      : 'bg-red-500 text-white shadow-lg'
-                  }`}
-                >
-                  {difficulty}
-                </button>
-              </div>
-              <div className="text-xs text-gray-500">
-                {difficulty === 'Easy' ? (
-                  <div>
-                    <div>プレイヤー: HP +50%, 攻撃力 +30%</div>
-                    <div>敵: HP -20%, ブロック率低下, 反撃弱体化</div>
-                  </div>
-                ) : (
-                  <div>標準的な難易度です</div>
-                )}
-              </div>
-            </div>
-            
-            <button
-              onClick={startGame}
-              className="w-full bg-gradient-to-r from-blue-500 to-purple-600 text-white font-bold py-3 px-6 rounded-xl hover:from-blue-600 hover:to-purple-700 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105"
-            >
-              ゲーム開始
-            </button>
-          </div>
-        </div>
-      </div>
+  const GameOverScreen = () => {
+    const isVictory = currentState.winner === 'player';
+    
+    // 勝利時のコンフェッティエフェクト
+    const ConfettiPiece = ({ delay, leftPosition }) => (
+      <div 
+        className="confetti"
+        style={{
+          left: `${leftPosition}%`,
+          animationDelay: `${delay}s`,
+          background: `hsl(${Math.random() * 360}, 70%, 60%)`
+        }}
+      />
     );
-  }
-
-  if (gameState === 'victory') {
+    
     return (
-      <div className="min-h-screen bg-gradient-to-br from-yellow-400 via-orange-500 to-red-500 flex items-center justify-center p-2">
-        {showConfetti && <Confetti />}
-        <div className="max-w-md w-full">
-          <div className="bg-white rounded-2xl shadow-2xl p-6 text-center transform animate-pulse">
-            <div className="text-6xl mb-4 animate-bounce">🏆</div>
-            <h2 className="text-2xl font-bold text-yellow-600 mb-2 animate-pulse">
-              {randomVictoryMessage}
+      <div className="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50 p-4">
+        {/* 勝利時のコンフェッティ */}
+        {isVictory && (
+          <div className="absolute inset-0 overflow-hidden pointer-events-none">
+            {[...Array(50)].map((_, i) => (
+              <ConfettiPiece 
+                key={i} 
+                delay={Math.random() * 3} 
+                leftPosition={Math.random() * 100} 
+              />
+            ))}
+          </div>
+        )}
+        
+        <div className={`rounded-lg p-4 sm:p-8 max-w-sm sm:max-w-lg w-full mx-4 text-center transform transition-all duration-500 celebration ${
+          isVictory 
+            ? 'bg-gradient-to-br from-yellow-600 to-orange-700 shadow-2xl shadow-yellow-500/50 glow' 
+            : 'bg-gray-800'
+        }`}>
+          {/* 勝利時の背景エフェクト */}
+          {isVictory && (
+            <>
+              <div className="absolute inset-0 rounded-lg bg-gradient-to-br from-yellow-400/20 to-orange-500/20 sparkle"></div>
+              <div className="absolute -top-2 -left-2 -right-2 -bottom-2 rounded-lg bg-gradient-to-br from-yellow-300/30 to-orange-400/30 blur-sm"></div>
+            </>
+          )}
+          
+          <div className="relative z-10">
+            <div className={`text-6xl sm:text-8xl mb-4 sm:mb-6 ${isVictory ? 'float' : ''}`}>
+              {isVictory ? '👑' : '😵'}
+            </div>
+            
+            <h2 className={`text-2xl sm:text-4xl font-bold mb-3 sm:mb-4 ${
+              isVictory 
+                ? 'text-yellow-100 victory-text' 
+                : 'text-white'
+            }`}>
+              {isVictory 
+                ? getText('🏆 完全勝利！ 🏆', '🏆 Полная победа! 🏆') 
+                : currentState.playerHp <= 0
+                  ? getText('メンタル敗北...', 'Ментальное поражение...')
+                  : getText('ゲームオーバー', 'Игра окончена')}
             </h2>
-            <div className="text-gray-700 mb-6 space-y-1 text-sm">
-              <p>🗡️ 総ダメージ: {gameStats.totalDamageDealt}</p>
-              <p>🛡️ 受けたダメージ: {gameStats.totalDamageReceived}</p>
-              <p>🎯 成功したリプライ: {gameStats.successfulReplies}</p>
-              <p>⚔️ ブロックした攻撃: {gameStats.blockedAttacks}</p>
-            </div>
-            <div className="space-y-3">
-              <button
-                onClick={startGame}
-                className="w-full bg-gradient-to-r from-green-500 to-blue-600 text-white font-bold py-3 px-6 rounded-xl hover:from-green-600 hover:to-blue-700 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105"
-              >
-                もう一度プレイ
-              </button>
-              <button
-                onClick={resetGame}
-                className="w-full bg-gray-500 text-white font-bold py-2 px-6 rounded-xl hover:bg-gray-600 transition-all duration-200"
-              >
-                メニューに戻る
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    );
-  }
-
-  if (gameState === 'gameOver') {
-    return (
-      <div className="min-h-screen bg-gradient-to-br from-gray-700 via-gray-800 to-black flex items-center justify-center p-2">
-        <div className="max-w-md w-full">
-          <div className="bg-white rounded-2xl shadow-2xl p-6 text-center">
-            <div className="text-6xl mb-4">💀</div>
-            <h2 className="text-2xl font-bold text-red-600 mb-4">ゲームオーバー</h2>
-            <div className="text-gray-700 mb-6 space-y-1 text-sm">
-              <p>🗡️ 総ダメージ: {gameStats.totalDamageDealt}</p>
-              <p>🛡️ 受けたダメージ: {gameStats.totalDamageReceived}</p>
-              <p>🎯 成功したリプライ: {gameStats.successfulReplies}</p>
-              <p>⚔️ ブロックした攻撃: {gameStats.blockedAttacks}</p>
-            </div>
-            <div className="space-y-3">
-              <button
-                onClick={startGame}
-                className="w-full bg-gradient-to-r from-blue-500 to-purple-600 text-white font-bold py-3 px-6 rounded-xl hover:from-blue-600 hover:to-purple-700 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105"
-              >
-                リトライ
-              </button>
-              <button
-                onClick={resetGame}
-                className="w-full bg-gray-500 text-white font-bold py-2 px-6 rounded-xl hover:bg-gray-600 transition-all duration-200"
-              >
-                メニューに戻る
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    );
-  }
-
-  return (
-    <div className="min-h-screen bg-gradient-to-br from-indigo-500 via-purple-600 to-pink-500 p-2">
-      <div className="max-w-md mx-auto">
-        {/* Header */}
-        <div className="bg-white rounded-xl shadow-lg p-4 mb-4">
-          <div className="flex justify-between items-center mb-3">
-            <h1 className="text-xl font-bold text-gray-800">ReplyBrawl</h1>
+            
+            {isVictory && (
+              <div className="text-lg sm:text-2xl mb-3 sm:mb-4 text-yellow-200 font-semibold sparkle">
+                {getText('レスバマスター', 'Мастер споров')}
+              </div>
+            )}
+            
+            <p className={`text-base sm:text-lg mb-6 sm:mb-8 leading-relaxed ${
+              isVictory 
+                ? 'text-yellow-100' 
+                : 'text-gray-300'
+            }`}>
+              {isVictory 
+                ? getText(
+                    '相手のメンタルを完全に粉砕！\nあなたの議論スキルは最強です！', 
+                    'Вы полностью сломали психику соперника!\nВаши навыки спора непревзойденны!'
+                  ).split('\n').map((line, i) => (
+                    <span key={i}>
+                      {line}
+                      {i === 0 && <br />}
+                    </span>
+                  ))
+                : currentState.playerHp <= 0
+                  ? getText(
+                      'あなたのメンタルが完全に破綻...\n相手の反撃に耐えられませんでした。',
+                      'Ваша психика полностью сломлена...\nНе смогли выдержать контратаки соперника.'
+                    ).split('\n').map((line, i) => (
+                      <span key={i}>
+                        {line}
+                        {i === 0 && <br />}
+                      </span>
+                    ))
+                  : getText('ブロックされてしまいました...', 'Вас заблокировали...')}
+            </p>
+            
+            {isVictory && (
+              <div className="grid grid-cols-3 gap-2 sm:gap-4 mb-6 sm:mb-8 text-yellow-200">
+                <div className="text-center float" style={{animationDelay: '0.2s'}}>
+                  <div className="text-2xl sm:text-3xl mb-1">⚡</div>
+                  <div className="text-xs sm:text-sm font-medium">{getText('超攻撃力', 'Сверхсила')}</div>
+                </div>
+                <div className="text-center float" style={{animationDelay: '0.4s'}}>
+                  <div className="text-2xl sm:text-3xl mb-1">🎯</div>
+                  <div className="text-xs sm:text-sm font-medium">{getText('完璧な戦略', 'Идеальная стратегия')}</div>
+                </div>
+                <div className="text-center float" style={{animationDelay: '0.6s'}}>
+                  <div className="text-2xl sm:text-3xl mb-1">🧠</div>
+                  <div className="text-xs sm:text-sm font-medium">{getText('圧倒的知性', 'Превосходный интеллект')}</div>
+                </div>
+              </div>
+            )}
+            
+            {isVictory && (
+              <div className="text-yellow-300 text-base sm:text-lg mb-4 sm:mb-6 font-bold sparkle">
+                {getText('🎊 おめでとうございます！ 🎊', '🎊 Поздравляем! 🎊')}
+              </div>
+            )}
+            
             <button
-              onClick={toggleDifficulty}
-              className={`px-3 py-1 rounded-full text-xs font-bold transition-all ${
-                difficulty === 'Easy'
-                  ? 'bg-green-500 text-white'
-                  : 'bg-red-500 text-white'
+              onClick={resetGame}
+              className={`font-bold py-3 sm:py-4 px-6 sm:px-8 rounded-lg transition-all duration-300 transform hover:scale-105 text-sm sm:text-base ${
+                isVictory
+                  ? 'bg-yellow-500 hover:bg-yellow-400 text-black shadow-lg hover:shadow-yellow-400/50 font-black'
+                  : 'bg-blue-500 hover:bg-blue-600 text-white'
               }`}
             >
-              {difficulty}
+              {getText('もう一度プレイ', 'Играть снова')}
             </button>
           </div>
-          
-          {/* HP Gauges */}
-          <div className="space-y-2">
-            <GaugeBar 
-              label="あなた" 
-              current={playerHP} 
-              max={maxPlayerHP} 
-              color="bg-green-500" 
+        </div>
+      </div>
+    );
+  };
+
+  return (
+    <div className="min-h-screen bg-black text-white overflow-x-hidden">
+      {/* ヘッダー */}
+      <header className="bg-gray-900 border-b border-gray-700 p-1 sm:p-2">
+        <div className="max-w-6xl mx-auto flex items-center justify-between flex-wrap gap-1 sm:gap-2">
+          <h1 className="text-base sm:text-xl font-bold text-blue-400">ReplyBrawl 🎤💥</h1>
+          <div className="flex items-center gap-1 sm:gap-2 flex-wrap">
+            <LanguageSwitcher 
+              currentLanguage={currentLanguage}
+              onLanguageChange={handleLanguageChange}
             />
+            <button
+              onClick={toggleDifficulty}
+              className={`px-1 sm:px-2 py-1 rounded text-xs sm:text-sm transition-colors font-medium ${
+                isEasyMode 
+                  ? 'bg-green-600 hover:bg-green-500 text-white' 
+                  : 'bg-red-600 hover:bg-red-500 text-white'
+              }`}
+            >
+              {isEasyMode 
+                ? getText('🎯 Easy', '🎯 Лёг') 
+                : getText('🔥 Normal', '🔥 Норм')}
+            </button>
+            <button
+              onClick={resetGame}
+              className="bg-gray-700 hover:bg-gray-600 text-white px-1 sm:px-2 py-1 rounded text-xs sm:text-sm transition-colors"
+            >
+              {getText('リセット', 'Сброс')}
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <div className="max-w-6xl mx-auto p-1 sm:p-2 space-y-2 sm:space-y-3">
+        {/* ゲージエリア */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 sm:gap-3">
+          <div className="bg-gray-900 rounded-lg p-2 sm:p-3">
+            <h3 className="text-sm sm:text-base font-bold mb-1 sm:mb-2 text-blue-400">
+              {getText('あなたのメンタル', 'Ваша психика')}
+            </h3>
             <GaugeBar 
-              label="敵" 
-              current={enemyHP} 
-              max={maxEnemyHP} 
-              color="bg-red-500" 
+              label="HP" 
+              value={currentState.playerHp} 
+              maxValue={isEasyMode ? 150 : 100}
+              type="hp"
             />
           </div>
           
-          {/* Language Switcher */}
-          <div className="mt-3">
-            <LanguageSwitcher language={language} setLanguage={setLanguage} />
+          <div className="bg-gray-900 rounded-lg p-2 sm:p-3">
+            <h3 className="text-sm sm:text-base font-bold mb-1 sm:mb-2 text-red-400">
+              {getText('相手のメンタル', 'Психика соперника')}
+            </h3>
+            <GaugeBar 
+              label="HP" 
+              value={currentState.npcHp} 
+              maxValue={isEasyMode ? 80 : 100}
+              type="hp"
+            />
           </div>
         </div>
 
-        {/* Tweet Card */}
-        <TweetCard tweet={currentTweet} />
+        {/* ブロック率ゲージ */}
+        <div className="bg-gray-900 rounded-lg p-2 sm:p-3">
+          <h3 className="text-sm sm:text-base font-bold mb-1 sm:mb-2 text-yellow-400">
+            {getText('ブロック危険度', 'Риск блокировки')}
+          </h3>
+          <GaugeBar 
+            label={getText('ブロック率', 'Риск блока')} 
+            value={currentState.blockRisk * 100} 
+            maxValue={100}
+            type="block"
+          />
+        </div>
 
-        {/* Action Log */}
-        {lastAction && (
-          <div className="bg-white rounded-xl shadow-lg p-3 mb-4">
-            <div className="text-sm text-gray-700 whitespace-pre-line">
-              {lastAction}
-            </div>
+        {/* 相手のツイート */}
+        <TweetCard 
+          username={getText('レスバ太郎', 'Спорщик Петя')}
+          handle={getText('@resbatarou', '@sporshchik_petya')}
+          text={currentState.npcReaction}
+        />
+
+        {/* メッセージエリア */}
+        {message && (
+          <div className="bg-blue-900 border border-blue-700 rounded-lg p-2 sm:p-3 text-center">
+            <p className="text-blue-200 font-medium text-xs sm:text-sm">{message}</p>
           </div>
         )}
 
-        {/* Reply Options */}
-        <div className="space-y-2">
-          {replyOptions.map((option, index) => (
-            <ReplyOption
-              key={index}
-              text={option}
-              onClick={() => handleReplySelect(option)}
-            />
-          ))}
-        </div>
+        {/* 反撃メッセージエリア */}
+        {counterMessage && (
+          <div className="bg-red-900 border border-red-700 rounded-lg p-2 sm:p-3 text-center animate-pulse">
+            <p className="text-red-200 font-medium text-xs sm:text-sm">
+              <span className="text-red-300 font-bold">⚡ {getText('反撃', 'Контратака')}！ </span>
+              {counterMessage}
+            </p>
+          </div>
+        )}
 
-        {/* Quit Button */}
-        <div className="mt-4">
-          <button
-            onClick={resetGame}
-            className="w-full bg-gray-600 text-white font-bold py-2 px-4 rounded-xl hover:bg-gray-700 transition-all duration-200"
-          >
-            ゲーム終了
-          </button>
+        {/* 返信オプション */}
+        <div className="bg-gray-900 rounded-lg p-4 sm:p-6">
+          <h3 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4 text-center">
+            {isProcessing 
+              ? getText('処理中...', 'Обработка...') 
+              : getText('返信を選択してください', 'Выберите ответ')}
+          </h3>
+          
+          <div className="space-y-3 sm:space-y-4">
+            {badwordOptions.map((badword, index) => (
+              <ReplyOption
+                key={`${badword.word}-${index}`}
+                badword={badword}
+                onSelect={handleBadwordSelect}
+                disabled={isProcessing || currentState.gameOver}
+              />
+            ))}
+          </div>
+
+          {/* ゲーム説明 */}
+          <div className="mt-4 sm:mt-6 p-3 sm:p-4 bg-gray-800 rounded-lg">
+            <h4 className="font-bold text-sm text-gray-300 mb-2">
+              🎮 {getText('ゲームルール', 'Правила игры')}
+            </h4>
+            <ul className="text-xs text-gray-400 space-y-1">
+              {currentLanguage === 'ja' ? (
+                <>
+                  <li>• 相手のメンタルHPを0にすれば勝利！</li>
+                  {isEasyMode && (
+                    <li>• <span className="text-green-400 font-bold">🎯 EASY MODE!</span> あなたのHP150、敵HP80、攻撃力+50%、ブロック率-70%、反撃ダメージ-60%</li>
+                  )}
+                  <li>• <span className="text-red-400 font-bold">⚡ NEW!</span> 相手も反撃してくる！あなたのHPも減る</li>
+                  <li>• 強い悪口ほどダメージが大きいが、ブロック率も上がる</li>
+                  <li>• ブロックされたら即ゲームオーバー</li>
+                  <li>• あなたのHPが0になっても敗北！</li>
+                  <li>• バランスを考えて攻撃しよう！</li>
+                </>
+              ) : (
+                <>
+                  <li>• Нанесите сопернику урон до 0 ментального HP, чтобы выиграть!</li>
+                  {isEasyMode && (
+                    <li>• <span className="text-green-400 font-bold">🎯 EASY MODE!</span> Ваш HP 150, враг HP 80, атака +50%, риск блока -70%, урон контратак -60%</li>
+                  )}
+                  <li>• <span className="text-red-400 font-bold">⚡ NEW!</span> Соперник тоже атакует в ответ! Ваш HP тоже уменьшается</li>
+                  <li>• Чем сильнее оскорбление, тем больше урон, но и риск блокировки выше</li>
+                  <li>• Если вас заблокировали, игра окончена</li>
+                  <li>• Если ваш HP упал до 0, вы проиграли!</li>
+                  <li>• Атакуйте, учитывая баланс!</li>
+                </>
+              )}
+            </ul>
+          </div>
         </div>
       </div>
+
+      {/* ゲームオーバースクリーン */}
+      {currentState.gameOver && <GameOverScreen />}
     </div>
   );
 }

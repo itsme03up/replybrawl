@@ -50,7 +50,9 @@ export function calculateDamage(badword) {
  * @returns {number} ブロック確率（0.0-1.0）
  */
 export function calculateBlockRisk(badword) {
-  return badword.block_risk || 0.1;
+  // ブロック確率を大幅に下げる
+  const baseRisk = badword.block_risk || 0.05; // 以前は0.1
+  return Math.min(baseRisk * 0.6, 0.15); // 最大15%まで
 }
 
 /**
@@ -138,10 +140,10 @@ export function calculateNpcCounterDamage(npcHp, playerAttackDamage) {
   const desperation = (100 - npcHp) / 100; // 0.0 - 1.0の絶望度
   const reactionStrength = playerAttackDamage / 30; // 受けたダメージに対する反応
   
-  // 基本ダメージ + 絶望ボーナス + 反応ボーナス
-  const baseDamage = 8 + Math.random() * 7; // 8-15のベースダメージ
-  const desperationBonus = desperation * 10; // 最大10の絶望ボーナス
-  const reactionBonus = reactionStrength * 5; // 最大5の反応ボーナス
+  // 基本ダメージを大幅に削減
+  const baseDamage = 3 + Math.random() * 4; // 3-7のベースダメージ（以前は8-15）
+  const desperationBonus = desperation * 6; // 最大6の絶望ボーナス（以前は10）
+  const reactionBonus = reactionStrength * 3; // 最大3の反応ボーナス（以前は5）
   
   return Math.floor(baseDamage + desperationBonus + reactionBonus);
 }

@@ -56,13 +56,15 @@ export class GameState {
    */
   processPlayerAttack(selectedBadword) {
     const baseDamage = calculateDamage(selectedBadword);
-    const damage = this.isEasyMode ? Math.floor(baseDamage * 1.3) : baseDamage;
+    const damage = this.isEasyMode ? Math.floor(baseDamage * 1.5) : baseDamage;
     
     const baseBlockRisk = calculateBlockRisk(selectedBadword);
-    const blockRisk = this.isEasyMode ? baseBlockRisk * 0.5 : baseBlockRisk;
+    // イージーモードではブロック確率を大幅に下げる
+    const blockRisk = this.isEasyMode ? baseBlockRisk * 0.3 : baseBlockRisk * 0.7;
     
-    // ブロックされるかの判定
-    const isBlocked = Math.random() < (this.blockRisk + blockRisk);
+    // ブロックされるかの判定（累積ではなく単発の確率に変更）
+    const currentBlockChance = this.isEasyMode ? blockRisk * 0.8 : blockRisk;
+    const isBlocked = Math.random() < currentBlockChance;
     
     if (isBlocked) {
       this.gameOver = true;
@@ -83,7 +85,8 @@ export class GameState {
 
     // ダメージを与える
     this.npcHp = Math.max(0, this.npcHp - damage);
-    this.blockRisk += blockRisk;
+    // ブロック確率の累積を緩やかにする
+    this.blockRisk += blockRisk * 0.3;
     
     // 履歴に追加
     this.history.push({
@@ -99,7 +102,8 @@ export class GameState {
     
     if (this.npcHp > 0) {
       const baseCounterDamage = calculateNpcCounterDamage(this.npcHp, damage);
-      counterDamage = this.isEasyMode ? Math.floor(baseCounterDamage * 0.6) : baseCounterDamage;
+      // 反撃ダメージを大幅に削減
+      counterDamage = this.isEasyMode ? Math.floor(baseCounterDamage * 0.4) : Math.floor(baseCounterDamage * 0.6);
       this.playerHp = Math.max(0, this.playerHp - counterDamage);
       npcCounterText = getNpcCounterAttack(this.npcHp, counterDamage, this.language);
       
@@ -189,8 +193,8 @@ export class GameState {
    */
   reset(isEasyMode = false) {
     this.isEasyMode = isEasyMode;
-    this.playerHp = isEasyMode ? 120 : 100;
-    this.npcHp = 100;
+    this.playerHp = isEasyMode ? 150 : 100; // イージーモードでは150HP
+    this.npcHp = isEasyMode ? 80 : 100;     // イージーモードでは敵のHPを80に削減
     this.blockRisk = 0;
     this.gameOver = false;
     this.winner = null;
