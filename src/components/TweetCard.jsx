@@ -57,14 +57,5 @@ const TweetCard = ({ username = "レスバ太郎", handle = "@resbatarou", text,
     </div>
   );
 };
-              </svg>
-              <span className="text-xs sm:text-sm">いいね</span>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-};
 
 export default TweetCard;
