@@ -135,6 +135,8 @@ const counterDamage = (baseDamage + desperationBonus + reactionBonus) * difficul
 
 悪口リストは以下のオープンソースプロジェクトから取得：
 
+> **[LDNOOBW - List of Dirty, Naughty, Obscene, and Otherwise Bad Words](https://github.com/LDNOOBW/List-of-Dirty-Naughty-Obscene-and-Otherwise-Bad-Words)**
+
 ### データ処理
 ```bash
 # 悪口データの変換
@@ -218,9 +220,11 @@ npm run test:coverage
 ## 📄 ライセンス
 
 - **ゲームコード**: MIT License
+- **悪口データ**: [LDNOOBW](https://github.com/LDNOOBW/List-of-Dirty-Naughty-Obscene-and-Otherwise-Bad-Words) のライセンスに準拠
 
 ## 🙏 クレジット
 
+- **悪口データ**: [LDNOOBW](https://github.com/LDNOOBW/List-of-Dirty-Naughty-Obscene-and-Otherwise-Bad-Words) プロジェクト
 - **アイコン**: Tailwind CSS Icons
 - **フォント**: システムフォント
 
